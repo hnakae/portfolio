@@ -1,4 +1,5 @@
 @import "../../../../assets/scss/colors";
+//MOBILE FIRST
 .home {
     max-width: 960px;
     margin: 20px auto;
@@ -44,12 +45,13 @@
     .home {
         position: absolute;
         left: 10%;
-        top: 70px;
+        //without logo
+        //top: 70px;
+        //with logo
         text-align: left;
         margin: 2em auto;
         img {
             width: 250px;
-            float: right;
         }
         h1 {
             font-size: 3em;
