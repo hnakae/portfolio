@@ -1,0 +1,23 @@
+@import "../assets/scss/colors";
+
+.wrapper{
+    background: linear-gradient(to bottom,
+    #000000,
+    $cyano-black,
+    #434343);
+    //background-image: url(../assets/images/Reef.png);
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "content";
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+@media (min-width: 900px) {
+    .wrapper {
+        grid-template-areas: 
+            "nav content";
+        
+        grid-template-columns: auto 1fr;
+    }
+}
