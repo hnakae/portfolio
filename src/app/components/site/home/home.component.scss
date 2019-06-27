@@ -3,6 +3,7 @@
     max-width: 960px;
     margin: 20px auto;
     text-align: center;
+    padding-top: 200px;
     img {
         //padding-top: 40px;
         max-width: 200px;
@@ -10,15 +11,18 @@
     }
     h1 {
         font-size: 2em;
-        font-weight: 300;
-        // color: #373d46;
-        color: $blue;
+        font-weight: 700;
+        //color: #373d46;
+        // color: $blue;
+        //color: white;
+        color: $cyano-white;
     }
     p {
         font-weight: 300;
         line-height: 1.8em;
-        // color: #98a0ad;
-        color: $blue;
+        color: #98a0ad;
+        // color: $blue;
+        display: inline;
     }
     .action-btn {
         display: inline-block;
@@ -38,6 +42,9 @@
 }
 @media (min-width: 900px) {
     .home {
+        position: absolute;
+        left: 10%;
+        top: 70px;
         text-align: left;
         margin: 2em auto;
         img {
