@@ -6,9 +6,10 @@
 html, body{
     font-family: 'Nunito', sans-serif;
     height: 100vh;
+    width: 100vw;
     position: relative;
-    //overflow: auto;
-    //display: block;
+    overflow: auto;
+    display: block;
 }
 // *, *:before, *:after {
 //     box-sizing: border-box;

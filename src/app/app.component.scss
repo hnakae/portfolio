@@ -1,23 +1,21 @@
 @import "../assets/scss/colors";
 
 .wrapper{
-    // background: linear-gradient(to bottom,
-    // $cyano-black,
-    // #434343);
-    background-image: url(../assets/images/home2.png);
     display: grid;
     grid-template-areas: 
         "nav"
         "content";
     grid-template-rows: auto 1fr;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 @media (min-width: 900px) {
     .wrapper {
-        background-image: url(../assets/images/home.png);
         grid-template-areas: 
             "nav content";
         
         grid-template-columns: auto 1fr;
+        height: 100%;
+        width: 100%;
     }
 }
