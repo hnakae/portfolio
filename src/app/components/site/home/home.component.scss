@@ -7,7 +7,8 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    background-image: url(../../../../assets/images/home2.png);
+    background: $bg-color;
+    //background-image: url(../../../../assets/images/home2.png);
     img {
         max-width: 200px;
     }
@@ -15,6 +16,10 @@
         font-size: 2em;
         font-weight: 700;
         color: $cyano-white;
+        span {
+            border-bottom: 2px solid $light-blue;
+            border-radius: 10px; 
+        }
     }
     p {
         font-weight: 300;
@@ -39,7 +44,7 @@
 }
 @media (min-width: 900px) {
     .home {
-        background-image: url(../../../../assets/images/home.png);
+        //background-image: url(../../../../assets/images/home.png);
         position: relative;
         .home-content {
             position: absolute;
@@ -55,6 +60,9 @@
         }
         h1 {
             font-size: 3em;
+            span {
+                border-bottom: 2px solid $light-blue; 
+            }
         }
         p {
             width: 60%;

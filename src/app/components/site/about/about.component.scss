@@ -1,0 +1,9 @@
+@import "../../../../assets/scss/colors";
+.about-page {
+    background: #3F4448;
+    height: 100%;
+    h1, p {
+        color: $cyano-white;
+    }
+}
+

@@ -1,3 +1,8 @@
-img {
-    max-width: 500px;
+@import "../../../../assets/scss/colors";
+.works-page {
+    background: #3F4448;
+    height: 100%;
+    img {
+        max-width: 500px;
+    }
 }
