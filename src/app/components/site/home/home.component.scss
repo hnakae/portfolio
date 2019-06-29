@@ -1,6 +1,6 @@
 @import "../../../../assets/scss/colors";
 //MOBILE FIRST
-.home {
+.home-page {
     .home-content {
         padding-top: 123px;
     }
@@ -43,7 +43,7 @@
     }
 }
 @media (min-width: 900px) {
-    .home {
+    .home-page {
         //background-image: url(../../../../assets/images/home.png);
         position: relative;
         .home-content {

@@ -2,8 +2,46 @@
 .about-page {
     background: #3F4448;
     height: 100%;
-    h1, p {
-        color: $cyano-white;
+    text-align: center;
+    .content {
+        padding-top: 123px;
     }
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: $cyano-white;
+        span {
+            border-bottom: 2px solid $light-blue;
+            border-radius: 10px; 
+        }
+    }
+    p {
+        font-weight: 300;
+        line-height: 1.8em;
+        color: #98a0ad;
+        display: inline;
+    }
+    
 }
+@media (min-width: 900px) {
+    .about-page {
+        //background-image: url(../../../../assets/images/home.png);
+        position: relative;
+        .content {
+            position: absolute;
+            top: 22%;
+            left: 180px;
+            text-align: left;
+        }
+        h1 {
+            font-size: 3em;
+            span {
+                border-bottom: 2px solid $light-blue; 
+            }
+        }
+        p {
+            width: 60%;
+        }
+    }
+}          
 
