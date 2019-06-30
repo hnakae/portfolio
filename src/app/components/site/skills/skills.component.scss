@@ -3,6 +3,8 @@
     background: #3F4448;
     height: 100%;
     text-align: center;
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
     .content {
         padding-top: 123px;
     }
