@@ -3,9 +3,7 @@ div {
     position: relative;
     grid-area: nav;
     display: flex;
-    //justify-content: space-between;
     align-items: center;
-    // background: $cyano-black;
     background: $nav-color;
     padding: 3.14159px;
     img {
@@ -14,20 +12,23 @@ div {
     }
     a , nav, ul {
         display: flex;
-        color: $mid-blue;
-        opacity: .8;
+        color: $blue;
+        // opacity: .8;
         text-decoration: none;
         padding: 5px;
-        &:hover{
-            color: $mid-blue;
-            opacity: 1;
-        }
     }
     nav {
         position: absolute;
         left: 55px;
         a {
             margin-right: 10px;
+            i{
+                &:hover {
+                    color: $light-blue;
+                    // opacity: 1;
+                }
+            }
+            
         }
     }
     ul {
@@ -37,10 +38,9 @@ div {
         li{
             a{
                 i{
-                    //color: $mid-blue;
                     &:hover {
-                        color: $mid-blue;
-                        opacity: 1;
+                        color: $light-blue;
+                        // opacity: 1;
                     }
                 }
             }
@@ -62,16 +62,19 @@ div {
         }
         nav {
             position: absolute;
-            top: 36%;
+            top: 30%;
             left: 11px;
-            height: 30vh;
+            height: 35vh;
             justify-content: space-between;
+            // i::after {
+            //     content: '';
+            // }
         }
         ul {
             position: absolute;
             bottom: 15px;
             left: 11px;
-            height: 15vh;
+            height: 20vh;
         }
     }
 }

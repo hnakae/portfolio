@@ -11,6 +11,6 @@ html, body{
     overflow: auto;
     display: block;
 }
-// *, *:before, *:after {
-//     box-sizing: border-box;
-// }
+*, *:before, *:after {
+    box-sizing: border-box;
+}
