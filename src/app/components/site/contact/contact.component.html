@@ -1,18 +1,48 @@
 <div class="contact-page">
   <div class="content">
-      <h1>Hiro <span>Nakae</span></h1><br>
-      <h2>Contact Me</h2><br>
+    <div class="heading">
+      <h1>Let's make <br> 
+          things <br>
+    <span>happen.</span></h1><br>
+    </div>
+    <div class="greeting">
       <p>
-        If you have a question for me about something you found on this site or whatever else, please feel free to get in touch. I read every email sent my way, though I may not reply to all.
+        Well hello there, if you have a question for me about something you found on this site or whatever else, please feel free to get in touch.
       </p>
-      <br>
-      <div>
-        Name:<input type="text"><br>
-        Email:<input type="text"><br>
-        Message: <textarea name="" id="" cols="30" rows="10"></textarea><br>
-        <button>Send</button>
-      </div>
-  </div>
-  
+    </div>
+          
     
+      
+    <br><br>
+
+    <div class="form_wrapper">
+      <div class="bluewrapcontact group">
+
+        <form action="contact.php" method="post">
+          <div class="fieldwrap group">
+
+            <div class="formleft">
+              <h3 class="fieldlabel">Your name</h3><br>
+              <input type="text" name="cf_name" placeholder="What's your name?"><br>
+            </div>
+
+            <div class="formright">
+              <h3 class="fieldlabel">Your e-mail</h3><br>
+              <input type="text" name="cf_email" placeholder="What's your e-mail address?"><br>
+            </div>
+
+          </div>
+          <div class="formmessage">
+
+            <h3 class="fieldlabel">Message</h3><br>
+            <textarea name="cf_message" class="formmessagestyle" placeholder="Whatcha talkin' bout willis?"></textarea><br>
+          
+          </div>
+          <input type="submit" value="Send Message">
+        </form>
+        
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -1,17 +1,31 @@
 @import "../../../../assets/scss/colors";
 .contact-page {
-    background: #3F4448;
+    background: $bg-color;
     height: 100%;
     text-align: center;
     .content {
         padding-top: 123px;
+        .heading{
+            text-align: left;
+            padding-left: 20%;
+        }
+        .greeting {
+            text-align: center;
+            margin: 0 50px;
+        }
+    }
+    div .form {
+        background: $ap-dark;
+        margin: 0 20px;
+        border-radius: 1px;
     }
     h1 {
         font-size: 2em;
         font-weight: 700;
         color: $cyano-white;
         span {
-            border-bottom: 2px solid $light-blue;
+            // border-bottom: 3px solid $ap-pop;
+            border-bottom: 3px solid $light-blue;
             border-radius: 10px; 
         }
     }
