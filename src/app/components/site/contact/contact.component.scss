@@ -1,10 +1,12 @@
 @import "../../../../assets/scss/colors";
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 .contact-page {
+    overflow: auto; 
     background: $bg-color;
     height: 100%;
     text-align: center;
     .content {
-        padding-top: 123px;
+        // padding-top: 123px;
         .heading{
             text-align: left;
             padding-left: 20%;
@@ -13,14 +15,126 @@
             text-align: center;
             margin: 0 50px;
         }
-    }
-    div .form {
-        background: $ap-dark;
-        margin: 0 20px;
-        border-radius: 1px;
+        .form_wrapper{
+            width: 100%;
+            margin-top: -50px;
+            .bluewrapcontact{
+                // background-color: #273040;
+                background-color: $nav-color;
+                box-shadow: 0px 0px 115px #000000a6;
+                padding: 6%;
+                width: 70%;
+                margin: 10% auto 10%;
+                form{
+                    display: block;
+                    margin-top: 0em;
+                    .fieldwrap{
+                        width: 100%;
+                        .formleft{
+                            width: 49%;
+                            float: left;
+                            .fieldlabel{
+                                color: #fff;
+                                font-family: 'Nunito', sans-serif;
+                                text-align: left;
+                                font-weight: normal;
+                                font-size: 18px;
+                                margin-top: 11px;
+                                letter-spacing: -1px;
+                            }
+                            input{
+                                text-align: left;
+                                width: 100%;
+                                padding: 18px 18px;
+                                margin: 8px 0;
+                                display: inline-block;
+                                border-radius: 4px;
+                                box-sizing: border-box;
+                                background-color: #0e131c;
+                                border: none;
+                                color: #fff;
+                                font-family: 'Nunito', sans-serif;
+                                font-weight: normal;
+                                font-size: 16px;
+                            }
+                        }
+                        .formright{
+                            width: 49%;
+                            float: right;
+                            .fieldlabel{
+                                color: #fff;
+                                font-family: 'Nunito', sans-serif;
+                                text-align: left;
+                                font-weight: normal;
+                                font-size: 18px;
+                                margin-top: 11px;
+                                letter-spacing: -1px;
+                            }
+                            input{
+                                text-align: left;
+                                width: 100%;
+                                padding: 18px 18px;
+                                margin: 8px 0;
+                                display: inline-block;
+                                border-radius: 4px;
+                                box-sizing: border-box;
+                                background-color: #0e131c;
+                                border: none;
+                                color: #fff;
+                                font-family: 'Nunito', sans-serif;
+                                font-weight: normal;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .formmessage{
+                        width: 100%;
+                        .fieldlabel{
+                            color: #fff;
+                            font-family: 'Nunito', sans-serif;
+                            text-align: left;
+                            font-weight: normal;
+                            font-size: 18px;
+                            margin-top: 11px;
+                            letter-spacing: -1px;
+                        }
+                        .formmessagestyle{
+                            width: 100%;
+                            padding: 18px 18px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border-radius: 4px;
+                            background-color: #0e131c;
+                            box-sizing: border-box;
+                            min-height: 22vh;
+                            border: none;
+                            color: #fff;
+                            font-family: 'Nunito', sans-serif;
+                            font-weight: normal;
+                            font-size: 16px;
+                        }
+                    }
+                    a{
+                        color: #00e5ea;
+                        font-family: 'Nunito', sans-serif;
+                        text-align: right;
+                        font-weight: normal;
+                        text-decoration: underline;
+                        font-size: 20px;
+                        display: block;
+                        padding: 0;
+                        background-color: transparent;
+                        letter-spacing: -1px;
+                        margin: 15px 0;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 700;
         color: $cyano-white;
         span {
@@ -28,11 +142,6 @@
             border-bottom: 3px solid $light-blue;
             border-radius: 10px; 
         }
-    }
-    h2 {
-        font-size: 1.5em;
-        font-weight: 500;
-        color: $cyano-white;
     }
     p {
         font-weight: 300;
