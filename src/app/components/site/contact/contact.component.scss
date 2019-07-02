@@ -6,21 +6,17 @@
     height: 100%;
     text-align: center;
     .content {
-        // padding-top: 123px;
+        padding-top: 30px;
         .heading{
             text-align: left;
             padding-left: 20%;
-        }
-        .greeting {
-            text-align: center;
-            margin: 0 50px;
         }
         .form_wrapper{
             width: 100%;
             margin-top: -50px;
             .bluewrapcontact{
                 // background-color: #273040;
-                background-color: $nav-color;
+                background-color: $bg-color;
                 box-shadow: 0px 0px 115px #000000a6;
                 padding: 6%;
                 width: 70%;
@@ -139,8 +135,9 @@
         color: $cyano-white;
         span {
             // border-bottom: 3px solid $ap-pop;
-            border-bottom: 3px solid $light-blue;
+            border-bottom: 2px solid $light-blue;
             border-radius: 10px; 
+            padding-bottom: 5px;
         }
     }
     p {
