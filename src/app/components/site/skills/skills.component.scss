@@ -3,12 +3,11 @@
     background: #3F4448;
     height: 100%;
     text-align: center;
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
+    // display: grid;
+    // grid-auto-columns: 1fr 1fr;
     .content {
         padding-top: 123px;
         text-align: center;
-        margin: 50px;
     }
     h1 {
         font-size: 2em;
@@ -31,23 +30,24 @@
         color: #98a0ad;
         display: inline;
     }
-    button {
+    .resume-btn {
         display: inline-block;
         text-decoration: none;
         color: white;
         font-weight: 700;
-        background: $blue;
         padding: 0.5em 2em;
-        border-radius: 40px;
+        border-radius: 2px;
+        border: 2px solid $blue;
         margin: 1em 0;
         &:hover{
             cursor: pointer;
+            background: $blue;
         }
     }
-    .front, .back {
-        float: left;
-        padding-right: 100px;
-    }
+    // .front, .back {
+    //     float: left;
+    //     padding-right: 100px;
+    // }
 }
 @media (min-width: 900px) {
     .skills-page {
