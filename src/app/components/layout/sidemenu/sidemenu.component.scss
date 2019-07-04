@@ -6,6 +6,7 @@ div {
     align-items: center;
     background: $nav-color;
     padding: 3.14159px;
+    border: 1px solid $nav-color;
     img {
         max-height: 40px;
         border-radius: 50%;

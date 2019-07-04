@@ -130,14 +130,13 @@
         }
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 700;
         color: $cyano-white;
         span {
-            // border-bottom: 3px solid $ap-pop;
             border-bottom: 2px solid $light-blue;
-            border-radius: 10px; 
-            padding-bottom: 5px;
+            // border-radius: 10px; 
+            border-bottom-right-radius: 5px;
         }
     }
     p {
