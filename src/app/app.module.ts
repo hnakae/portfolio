@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { SkillsComponent } from './components/site/skills/skills.component';
 import { WorkComponent } from './components/site/work/work.component';
 import { ContactComponent } from './components/site/contact/contact.component';
 import { ContentComponent } from './components/layout/content/content.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostsService } from './posts.service';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,16 @@ import { ContentComponent } from './components/layout/content/content.component'
     SkillsComponent,
     WorkComponent,
     ContactComponent,
-    ContentComponent
+    ContentComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
