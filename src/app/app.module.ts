@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidemenuComponent } from './components/layout/sidemenu/sidemenu.component';
@@ -12,8 +14,7 @@ import { SkillsComponent } from './components/site/skills/skills.component';
 import { WorkComponent } from './components/site/work/work.component';
 import { ContactComponent } from './components/site/contact/contact.component';
 import { ContentComponent } from './components/layout/content/content.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostsService } from './posts.service';
+import { GmapComponent } from './components/api/gmap/gmap.component';
 
 @NgModule({
   declarations: [
@@ -25,15 +26,18 @@ import { PostsService } from './posts.service';
     WorkComponent,
     ContactComponent,
     ContentComponent,
-    PostsComponent
+    GmapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBEkdHuhopLCGmsNAOUJiusigM5AOJOMUk'
+    })
   ],
-  providers: [PostsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

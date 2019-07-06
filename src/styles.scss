@@ -9,8 +9,13 @@ html, body{
     height: 100vh;
     width: 100vw;
     position: relative;
-    overflow: auto;
+    // overflow: auto;
     display: block;
+    // padding: 0;
+    // margin: 0;
+    // #map {
+    //   height: 500px;
+    // }
 }
 *, *:before, *:after {
     box-sizing: border-box;

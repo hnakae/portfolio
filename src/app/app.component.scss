@@ -2,7 +2,7 @@
 
 .wrapper{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "nav"
         "content";
     grid-template-rows: auto 1fr;
@@ -10,13 +10,13 @@
     width: 100%;
 }
 .content{
-    overflow: auto;
+  overflow: auto;
 }
 @media (min-width: 900px) {
     .wrapper {
-        grid-template-areas: 
+        grid-template-areas:
             "nav content";
-        
+
         grid-template-columns: auto 1fr;
         height: 100%;
         width: 100%;

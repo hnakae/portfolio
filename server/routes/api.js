@@ -3,8 +3,9 @@ const router = express.Router();
 
 // declare axios for making http requests
 const axios = require('axios');
-const API = 'https://jsonplaceholder.typicode.com';
-
+const key = process.env.API_KEY;
+const API = 'https://maps.googleapis.com/maps/api/js?key='+key+'&callback=initMap';
+const url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBEkdHuhopLCGmsNAOUJiusigM5AOJOMUk&callback=initMap';
 /* GET api listing. */
 router.get('/', (req, res) => {
   res.send('api works');
