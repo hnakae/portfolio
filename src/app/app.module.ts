@@ -34,6 +34,7 @@ import { GmapComponent } from './components/api/gmap/gmap.component';
     FormsModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
+      // please dont use this key lol
       apiKey: 'AIzaSyBEkdHuhopLCGmsNAOUJiusigM5AOJOMUk'
     })
   ],
