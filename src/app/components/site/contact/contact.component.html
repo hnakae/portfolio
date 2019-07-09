@@ -2,53 +2,64 @@
   <div class="content">
     <div class="header">
       <div class="heading">
-          <h1>Let's make <br>
-              things <br>
-        <span>happen.</span></h1><br>
-        </div>
-        <div class="greeting">
-          <!-- <p>
+        <h1>
+          Let's make <br />
+          things <br />
+          <span>happen.</span>
+        </h1>
+        <br />
+      </div>
+      <div class="greeting">
+        <!-- <p>
             Well hello there, if you have a question for me about something you found on this site or whatever else, please feel free to get in touch.
           </p> -->
-        </div>
+      </div>
     </div>
     <div class="form_wrapper">
       <div class="bluewrapcontact group">
-
         <form action="/contact" method="POST">
           <div class="fieldwrap group">
-
             <div class="formleft">
-              <h3 class="fieldlabel">Your name</h3><br>
-              <input type="text" name="name" placeholder="What's your name?"><br>
+              <h3 class="fieldlabel">Your name</h3>
+              <br />
+              <input
+                type="text"
+                name="name"
+                placeholder="What's your name?"
+              /><br />
             </div>
 
             <div class="formright">
-              <h3 class="fieldlabel">Your e-mail</h3><br>
-              <input type="text" name="email" placeholder="What's your e-mail address?"><br>
+              <h3 class="fieldlabel">Your e-mail</h3>
+              <br />
+              <input
+                type="text"
+                name="email"
+                placeholder="What's your e-mail address?"
+              /><br />
             </div>
-
           </div>
           <div class="formmessage">
-
-            <h3 class="fieldlabel">Message</h3><br>
-            <textarea name="message" class="formmessagestyle" placeholder="Do you ever get the feeling that there's something going on that we don't know about?"></textarea><br>
-
+            <h3 class="fieldlabel">Message</h3>
+            <br />
+            <textarea
+              name="message"
+              class="formmessagestyle"
+              placeholder="Do you ever get the feeling that there's something going on that we don't know about?"
+            ></textarea
+            ><br />
           </div>
           <button type="submit" class="send">Submit</button>
         </form>
-
       </div>
     </div>
   </div>
-    <div class="map">
-  <div class="form_wrapper">
-    <div class="bluewrapcontact group">
 
-    <app-gmap></app-gmap>
+  <div class="map">
+    <!-- <div class="form_wrapper">
+      <div class="bluewrapcontact group"> -->
+        <app-gmap></app-gmap>
+      <!-- </div>
+    </div> -->
   </div>
-  </div>
-  </div>
-
 </div>
-
