@@ -12,7 +12,7 @@
 .content{
   overflow: auto;
 }
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
     .wrapper {
         grid-template-areas:
             "nav content";

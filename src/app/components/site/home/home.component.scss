@@ -2,8 +2,64 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 //MOBILE FIRST
 .home-page {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: $bg-color;
+    // background: $ap-dark;
     .home-content {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
         padding-top: 123px;
+        text-align: center;
+        .card {
+            background: $bg-color;
+            border: none;
+            h1 {
+                font-size: 2em;
+                font-weight: 700;
+                color: $cyano-white;
+                font-family: 'Nunito', sans-serif;
+                span {
+                    border-bottom: 2px solid $light-blue;
+                    // border-radius: 10px; 
+                    border-bottom-right-radius: 5px;
+                }
+            }
+            p {
+                // font-size: 16px;
+                font-weight: 300;
+                line-height: 1.8em;
+                color: #98a0ad;
+                display: inline;
+                font-family: 'Nunito', sans-serif;
+                a{
+                    text-decoration: none;
+                    color: $ap-pop;
+                }
+            }
+        }
+        
+        .action-btn{
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;
+            color: white;
+            font-weight: 700;
+            // background: $blue;
+            border: 2px solid $blue;
+            padding: 0.5em 2em;
+            border-radius: 2px;
+            margin-top: 1em;
+            margin-right: 1em;
+            // transition: 0.3s;
+            &:hover {
+                background: $blue;
+                // box-shadow: 0px 0px 90px #000000a6;
+            }
+        }
+        // gradient border
         .module-border{
             max-width: 250px;
             padding: 1rem;
@@ -14,110 +70,36 @@
                 background: $bg-color;
                 color: white;
                 padding: 2rem;
+                &:hover {
+                    background: none;
+                }
             }
-        }
-        .wrapper{
-            width: 80%;
-
-            // background-color: #273040;
-            background-color: $bg-color;
-            // background-color: white;
-            border-radius: 2px;
-            
-            box-shadow: 0px 0px 115px #000000a6;
-            padding: 6%;
-            margin: 5% auto 10%;
-
-            // border: 2px solid $ap-blue;
-            &:hover{
-                // border: 2px solid $ap-pop;
-            }
-            .content{
-                display: block;
-                margin-top: 0em; 
-            }
-        }
-    }
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background: $bg-color;
-    //background-image: url(../../../../assets/images/home2.png);
-    // img {
-    //     max-width: 200px;
-    //     float: left;
-    //     border-radius: 50%;
-    // }
-    h1 {
-        font-size: 2em;
-        font-weight: 700;
-        color: $cyano-white;
-        font-family: 'Nunito', sans-serif;
-        span {
-            border-bottom: 2px solid $light-blue;
-            // border-radius: 10px; 
-            border-bottom-right-radius: 5px;
-        }
-    }
-    p {
-        // font-size: 16px;
-        font-weight: 300;
-        line-height: 1.8em;
-        color: #98a0ad;
-        display: inline;
-        a{
-            text-decoration: none;
-            color: $ap-pop;
-        }
-    }
-    .action-btn, .works-btn {
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        // background: $blue;
-        border: 2px solid $blue;
-        padding: 0.5em 2em;
-        border-radius: 2px;
-        margin-top: 1em;
-        margin-right: 1em;
-        // transition: 0.3s;
-        &:hover {
-            background: $blue;
-            // box-shadow: 0px 0px 90px #000000a6;
-        }
+        }//gradient border
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
     .home-page {
-        //background-image: url(../../../../assets/images/home.png);
         position: relative;
+        height: 100%;
+        width: 100%;
         .home-content {
             position: absolute;
             top: 22%;
             left: 180px;
             text-align: left;
             width: 70%;
-        }
-        
-        height: 100%;
-        width: 100%;
-        img {
-            width: 250px;
-        }
-        h1 {
-            font-size: 3em;
-            span {
-                border-bottom: 2px solid $light-blue; 
+            img {
+                width: 250px;
             }
-        }
-        p {
-            width: 60%;
-        }
-        footer ul {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2em 0;
+            h1 {
+                font-size: 3em;
+                span {
+                    border-bottom: 2px solid $light-blue; 
+                }
+            }
+            p {
+                width: 60%;
+            }
         }
     }
 }

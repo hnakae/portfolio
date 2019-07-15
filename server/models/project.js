@@ -45,24 +45,24 @@ var Project = mongoose.model('Project', projectSchema);
 //     console.log(user);
 //   }
 // });
-Project.create({
-  name: "MEAN app"
-}, function(err, project){
-  if(err){
-    console.log(err);
-  } else {
-    console.log(project);
-  }
-});
+// Project.create({
+//   name: "MEAN app"
+// }, function(err, project){
+//   if(err){
+//     console.log(err);
+//   } else {
+//     console.log(project);
+//   }
+// });
 
-Project.find({}, function(err, projects){
-  if(err){
-    console.log("error");
-    console.log(err);
-  } else {
-    console.log(projects);
-  }
-});
+// Project.find({}, function(err, projects){
+//   if(err){
+//     console.log("error");
+//     console.log(err);
+//   } else {
+//     console.log(projects);
+//   }
+// });
 
 
 // make this available to our users in our Node applications

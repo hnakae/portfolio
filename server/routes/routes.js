@@ -1,4 +1,4 @@
-var User = require('../models/user');
+var User = require('../models/project');
 
 module.exports = function(app) {
   //api-----------------------

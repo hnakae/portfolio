@@ -1,4 +1,5 @@
 @import "../../../../assets/scss/colors";
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 .works-page {
     // background: #3F4448;
     // text-align: center;
@@ -8,6 +9,13 @@
     padding-top: 30px;
     .container{
         width: 100%;
+        padding-top: 5%;
+        .heading {
+            h1, p{
+                color: black;
+                // background: white;
+            }
+        }
         .wrapper{
             // background-color: #273040;
             background-color: $bg-color;
@@ -17,18 +25,24 @@
             border-radius: 2px;
             
             box-shadow: 0px 0px 115px #000000a6;
+            // box-shadow: 0px 0px 115px $blue;
             padding: 6%;
             width: 100%;
             margin: 5% auto 10%;
 
-            border: 2px solid $ap-blue;
+            border: 2px solid $bg-color;
             &:hover{
                 border: 2px solid $ap-pop;
             }
             .content{
                 display: block;
                 margin-top: 0em; 
+                font-family: 'Nunito', sans-serif;
+                h6 {
+                    color: $cyano-white;
+                }
                 h3{
+                    
                     color: $cyano-white;
                     text-align: left;
                 }
@@ -50,6 +64,9 @@
                         background: $blue;
                     }
                 }
+                img {
+                    width: 80%;
+                }
             }
         }
     }
@@ -62,7 +79,8 @@
         color: $cyano-white;
         span {
             border-bottom: 2px solid $light-blue;
-            border-radius: 10px; 
+            // border-radius: 10px; 
+            border-bottom-right-radius: 5px;
         }
     }
     p {

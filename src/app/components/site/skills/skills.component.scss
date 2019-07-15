@@ -1,4 +1,6 @@
 @import "../../../../assets/scss/colors";
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
 .skills-page {
     background: #3F4448;
     height: 100%;
@@ -13,6 +15,7 @@
         font-size: 2em;
         font-weight: 700;
         color: $cyano-white;
+        font-family: 'Nunito', sans-serif;
         span {
             border-bottom: 2px solid $light-blue;
             // border-radius: 10px; 
@@ -26,12 +29,14 @@
         color: $cyano-white;
     }
     p {
+        font-family: 'Nunito', sans-serif;
         font-weight: 300;
         line-height: 1.8em;
         color: #98a0ad;
         display: inline;
     }
     .resume-btn {
+        font-family: 'Nunito', sans-serif;
         display: inline-block;
         text-decoration: none;
         color: white;

@@ -7,7 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidemenuComponent } from './components/layout/sidemenu/sidemenu.component';
+import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { HomeComponent } from './components/site/home/home.component';
 import { AboutComponent } from './components/site/about/about.component';
 import { SkillsComponent } from './components/site/skills/skills.component';
@@ -19,7 +19,7 @@ import { GmapComponent } from './components/api/gmap/gmap.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SidemenuComponent,
+    NavbarComponent,
     HomeComponent,
     AboutComponent,
     SkillsComponent,
