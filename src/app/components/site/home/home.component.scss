@@ -2,44 +2,83 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 //MOBILE FIRST
 .home-page {
-    height: 100%;
-    width: 100%;
+    height: calc(100vh - 56px);
     text-align: center;
     background: $bg-color;
     // background: $ap-dark;
     .home-content {
         display: block;
-        width: 80%;
+        height: 100%;
+        width: 100%;
         margin: 0 auto;
-        padding-top: 123px;
         text-align: center;
-        .card {
-            background: $bg-color;
-            border: none;
-            h1 {
-                font-size: 2em;
-                font-weight: 700;
-                color: $cyano-white;
-                font-family: 'Nunito', sans-serif;
-                span {
-                    border-bottom: 2px solid $light-blue;
-                    // border-radius: 10px; 
-                    border-bottom-right-radius: 5px;
-                }
+
+        section {
+            // height: calc(100vh - 56px);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            // padding-bottom: 120px;
+            &.one {
+                background: $bg-color;
             }
-            p {
-                // font-size: 16px;
-                font-weight: 300;
-                line-height: 1.8em;
-                color: #98a0ad;
-                display: inline;
-                font-family: 'Nunito', sans-serif;
-                a{
-                    text-decoration: none;
-                    color: $ap-pop;
+            &.two {
+                background: $nav-color;
+            }
+            &.three {
+                background: $ap-dark;
+            }
+            .wrapper{
+                // background-color: #273040;
+                background-color: $bg-color;
+                // background-color: white;
+                
+    
+                border-radius: 2px;
+                
+                box-shadow: 0px 0px 115px #000000a6;
+                // box-shadow: 0px 0px 115px $blue;
+                padding: 6%;
+                width: 70%;
+                margin: 5% auto 10%;
+    
+                border: 2px solid $bg-color;
+                &:hover{
+                    border: 2px solid $ap-pop;
+                }
+                .content{
+                    display: block;
+                    margin-top: 0em; 
+                    font-family: 'Nunito', sans-serif;
                 }
             }
         }
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            color: $cyano-white;
+            font-family: 'Nunito', sans-serif;
+            span {
+                border-bottom: 2px solid $light-blue;
+                // border-radius: 10px; 
+                border-bottom-right-radius: 5px;
+            }
+        }
+        p {
+            // font-size: 16px;
+            font-weight: 300;
+            line-height: 1.8em;
+            color: #98a0ad;
+            display: inline;
+            font-family: 'Nunito', sans-serif;
+            a{
+                text-decoration: none;
+                color: $ap-pop;
+            }
+        }
+        
         
         .action-btn{
             display: inline-block;
