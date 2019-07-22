@@ -4,7 +4,7 @@
 .home-page {
     height: calc(100vh - 56px);
     text-align: center;
-    background: $bg-color;
+    // background: $bg-color;
     // background: $ap-dark;
     .home-content {
         display: block;
@@ -23,31 +23,25 @@
             // padding-bottom: 120px;
             &.one {
                 background: $bg-color;
+                // opacity: .8;
+                // background-image: url(../../../../assets/images/40314391445_5f264aeef6_z.jpg);
             }
             &.two {
-                background: $nav-color;
-            }
-            &.three {
-                background: $ap-dark;
+                background: $mid-blue;
             }
             .wrapper{
                 // background-color: #273040;
-                background-color: $bg-color;
+                // background-color: $bg-color;
                 // background-color: white;
-                
-    
-                border-radius: 2px;
-                
+                background: $mid-blue;
                 box-shadow: 0px 0px 115px #000000a6;
                 // box-shadow: 0px 0px 115px $blue;
                 padding: 6%;
                 width: 70%;
                 margin: 5% auto 10%;
-    
-                border: 2px solid $bg-color;
-                &:hover{
-                    border: 2px solid $ap-pop;
-                }
+                
+                border-radius: 2px;
+                border: 2px solid $mid-blue;
                 .content{
                     display: block;
                     margin-top: 0em; 
@@ -70,7 +64,8 @@
             // font-size: 16px;
             font-weight: 300;
             line-height: 1.8em;
-            color: #98a0ad;
+            // color: #98a0ad;
+            color: $cyano-white;
             display: inline;
             font-family: 'Nunito', sans-serif;
             a{
@@ -98,22 +93,6 @@
                 // box-shadow: 0px 0px 90px #000000a6;
             }
         }
-        // gradient border
-        .module-border{
-            max-width: 250px;
-            padding: 1rem;
-            position: relative;
-            background: linear-gradient(to right, $blue, $pink);
-            padding: 3px;
-            .module{
-                background: $bg-color;
-                color: white;
-                padding: 2rem;
-                &:hover {
-                    background: none;
-                }
-            }
-        }//gradient border
     }
 }
 @media (min-width: 1024px) {

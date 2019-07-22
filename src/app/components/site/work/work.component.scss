@@ -11,7 +11,10 @@
         width: 100%;
         padding-top: 5%;
         .heading {
+            // height: 30vh;
+            border-bottom: 1px solid black;
             h1, p{
+                // margin-top: 150px;
                 color: black;
                 // background: white;
             }
@@ -31,9 +34,9 @@
             margin: 5% auto 10%;
 
             border: 2px solid $bg-color;
-            &:hover{
-                border: 2px solid $ap-pop;
-            }
+            // &:hover{
+            //     border: 2px solid $ap-pop;
+            // }
             .content{
                 display: block;
                 margin-top: 0em; 

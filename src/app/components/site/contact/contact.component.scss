@@ -6,46 +6,40 @@
     height: 100%;
     font-family: 'Nunito', sans-serif;
     // text-align: center;
-    .map{
-      height: 100%;
-      width: 100%;
-    }
+    // .map{
+    //   height: 100%;
+    //   width: 100%;
+    // }
 
     .content {
       width: 100%;
       height: calc(100vh - 56px);
+
       .heading{
-          text-align: left;
-          padding-left: 15%;
-          
+          padding-top: 30px;
+          text-align: center;
       }
-      .form_wrapper{
+      .wrapper{
           width: 100%;
-          margin-top: -50px;
-          .bluewrapcontact{
+        //   padding-top: 75px;
+          .content{
               // background-color: #273040;
               background-color: $bg-color;
               box-shadow: 0px 0px 115px #000000a6;
-              padding: 6%;
-              width: 70%;
-              margin: 10% auto 10%;
+              padding: 9%;
+            //   width: 70%;
+             width: 100%;
+             height: calc(100vh - 56px);
+            //   margin: 10% auto 10%;
               form{
                 display: block;
                 margin-top: 0em;
+                text-align: right;
                 .fieldwrap{
                     width: 100%;
                     .formleft{
                         width: 49%;
                         float: left;
-                        .fieldlabel{
-                          color: #fff;
-                          font-family: 'Nunito', sans-serif;
-                          text-align: left;
-                          font-weight: normal;
-                          font-size: 18px;
-                          margin-top: 11px;
-                          letter-spacing: -1px;
-                        }
                         input{
                           text-align: left;
                           width: 100%;
@@ -65,15 +59,6 @@
                       .formright{
                           width: 49%;
                           float: right;
-                          .fieldlabel{
-                              color: #fff;
-                              font-family: 'Nunito', sans-serif;
-                              text-align: left;
-                              font-weight: normal;
-                              font-size: 18px;
-                              margin-top: 11px;
-                              letter-spacing: -1px;
-                          }
                           input{
                               text-align: left;
                               width: 100%;
@@ -90,19 +75,10 @@
                               font-size: 16px;
                           }
                       }
-                  }
-                  .formmessage{
-                      width: 100%;
-                      .fieldlabel{
-                          color: #fff;
-                          font-family: 'Nunito', sans-serif;
-                          text-align: left;
-                          font-weight: normal;
-                          font-size: 18px;
-                          margin-top: 11px;
-                          letter-spacing: -1px;
-                      }
-                      .formmessagestyle{
+                }
+                .formmessage{
+                        width: 100%;
+                        .formmessagestyle{
                         width: 100%;
                         padding: 18px 18px;
                         margin: 8px 0;
@@ -116,23 +92,27 @@
                         font-family: 'Nunito', sans-serif;
                         font-weight: normal;
                         font-size: 16px;
-                      }
-                    }
-                    a{
-                        color: #00e5ea;
-                        font-family: 'Nunito', sans-serif;
-                        text-align: right;
-                        font-weight: normal;
-                        text-decoration: underline;
-                        font-size: 20px;
-                        display: block;
-                        padding: 0;
-                        background-color: transparent;
-                        letter-spacing: -1px;
-                        margin: 15px 0;
-                        border: none;
-                        cursor: pointer;
-                    }
+                        }
+                }
+                }
+                a{
+                    color: #00e5ea;
+                    font-family: 'Nunito', sans-serif;
+                    text-align: center;
+                    font-weight: normal;
+                    // text-decoration: underline;
+                    width: 100px;
+                    font-size: 20px;
+                    // display: block;
+                    padding: 0;
+                    
+                    background-color: $nav-color;
+                    border: none;
+                    letter-spacing: -1px;
+                    margin-top: 15px;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
                 }
             }
         }
