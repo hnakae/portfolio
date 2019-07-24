@@ -21,19 +21,21 @@
         }
         .wrapper{
             // background-color: #273040;
-            background-color: $bg-color;
-            // background-color: white;
-            
+            // background-color: $bg-color;
+            // background-color:#001d33;
+            background: linear-gradient(to bottom,#05DBF2,$ap-pop);
+            // #001d33
 
             border-radius: 2px;
             
-            box-shadow: 0px 0px 115px #000000a6;
+            // box-shadow: 0px 0px 115px #000000a6;
+            box-shadow: 0px 0px 115px pink;
             // box-shadow: 0px 0px 115px $blue;
             padding: 6%;
             width: 100%;
             margin: 5% auto 10%;
 
-            border: 2px solid $bg-color;
+            // border: 2px solid $bg-color;
             // &:hover{
             //     border: 2px solid $ap-pop;
             // }

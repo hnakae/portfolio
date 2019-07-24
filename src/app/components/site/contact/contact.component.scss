@@ -11,112 +11,113 @@
     //   width: 100%;
     // }
 
-    .content {
-      width: 100%;
-      height: calc(100vh - 56px);
+    // .contact-content {
+    //   width: 100%;
+    // //   height: calc((100vh - 56px)/2);
 
-      .heading{
-          padding-top: 30px;
-          text-align: center;
-      }
-      .wrapper{
-          width: 100%;
-        //   padding-top: 75px;
-          .content{
-              // background-color: #273040;
-              background-color: $bg-color;
-              box-shadow: 0px 0px 115px #000000a6;
-              padding: 9%;
-            //   width: 70%;
-             width: 100%;
-             height: calc(100vh - 56px);
-            //   margin: 10% auto 10%;
-              form{
-                display: block;
-                margin-top: 0em;
-                text-align: right;
-                .fieldwrap{
-                    width: 100%;
-                    .formleft{
-                        width: 49%;
-                        float: left;
-                        input{
-                          text-align: left;
-                          width: 100%;
-                          padding: 18px 18px;
-                          margin: 8px 0;
-                          display: inline-block;
-                          border-radius: 4px;
-                          box-sizing: border-box;
-                          background-color: #0e131c;
-                          border: none;
-                          color: #fff;
-                          font-family: 'Nunito', sans-serif;
-                          font-weight: normal;
-                          font-size: 16px;
-                        }
-                      }
-                      .formright{
-                          width: 49%;
-                          float: right;
-                          input{
-                              text-align: left;
-                              width: 100%;
-                              padding: 18px 18px;
-                              margin: 8px 0;
-                              display: inline-block;
-                              border-radius: 4px;
-                              box-sizing: border-box;
-                              background-color: #0e131c;
-                              border: none;
-                              color: #fff;
-                              font-family: 'Nunito', sans-serif;
-                              font-weight: normal;
-                              font-size: 16px;
-                          }
-                      }
-                }
-                .formmessage{
-                        width: 100%;
-                        .formmessagestyle{
-                        width: 100%;
-                        padding: 18px 18px;
-                        margin: 8px 0;
-                        display: inline-block;
-                        border-radius: 4px;
-                        background-color: #0e131c;
-                        box-sizing: border-box;
-                        min-height: 22vh;
-                        border: none;
-                        color: #fff;
-                        font-family: 'Nunito', sans-serif;
-                        font-weight: normal;
-                        font-size: 16px;
-                        }
-                }
-                }
-                a{
-                    color: #00e5ea;
-                    font-family: 'Nunito', sans-serif;
-                    text-align: center;
-                    font-weight: normal;
-                    // text-decoration: underline;
-                    width: 100px;
-                    font-size: 20px;
-                    // display: block;
-                    padding: 0;
+    //   .heading{
+    //       padding-top: 30px;
+    //       text-align: center;
+    //   }
+    //   .wrapper{
+    //       width: 100%;
+    //     //   padding-top: 75px;
+    //       .content{
+    //           // background-color: #273040;
+    //           background-color: $bg-color;
+    //           box-shadow: 0px 0px 115px #000000a6;
+    //           padding: 9%;
+    //         //   width: 70%;
+    //          width: 100%;
+    //         //  height: calc((100vh - 56px)/2);
+    //         // height: 50vh;
+    //         //   margin: 10% auto 10%;
+    //           form{
+    //             display: block;
+    //             margin-top: 0em;
+    //             text-align: right;
+    //             .fieldwrap{
+    //                 width: 100%;
+    //                 .formleft{
+    //                     width: 49%;
+    //                     float: left;
+    //                     input{
+    //                       text-align: left;
+    //                       width: 100%;
+    //                       padding: 18px 18px;
+    //                       margin: 8px 0;
+    //                       display: inline-block;
+    //                       border-radius: 4px;
+    //                       box-sizing: border-box;
+    //                       background-color: #0e131c;
+    //                       border: none;
+    //                       color: #fff;
+    //                       font-family: 'Nunito', sans-serif;
+    //                       font-weight: normal;
+    //                       font-size: 16px;
+    //                     }
+    //                   }
+    //                   .formright{
+    //                       width: 49%;
+    //                       float: right;
+    //                       input{
+    //                           text-align: left;
+    //                           width: 100%;
+    //                           padding: 18px 18px;
+    //                           margin: 8px 0;
+    //                           display: inline-block;
+    //                           border-radius: 4px;
+    //                           box-sizing: border-box;
+    //                           background-color: #0e131c;
+    //                           border: none;
+    //                           color: #fff;
+    //                           font-family: 'Nunito', sans-serif;
+    //                           font-weight: normal;
+    //                           font-size: 16px;
+    //                       }
+    //                   }
+    //             }
+    //             .formmessage{
+    //                     width: 100%;
+    //                     .formmessagestyle{
+    //                     width: 100%;
+    //                     padding: 18px 18px;
+    //                     margin: 8px 0;
+    //                     display: inline-block;
+    //                     border-radius: 4px;
+    //                     background-color: #0e131c;
+    //                     box-sizing: border-box;
+    //                     min-height: 22vh;
+    //                     border: none;
+    //                     color: #fff;
+    //                     font-family: 'Nunito', sans-serif;
+    //                     font-weight: normal;
+    //                     font-size: 16px;
+    //                     }
+    //             }
+    //             }
+    //             a{
+    //                 color: #00e5ea;
+    //                 font-family: 'Nunito', sans-serif;
+    //                 text-align: center;
+    //                 font-weight: normal;
+    //                 // text-decoration: underline;
+    //                 width: 100px;
+    //                 font-size: 20px;
+    //                 // display: block;
+    //                 padding: 0;
                     
-                    background-color: $nav-color;
-                    border: none;
-                    letter-spacing: -1px;
-                    margin-top: 15px;
-                    border: none;
-                    border-radius: 3px;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+    //                 background-color: $nav-color;
+    //                 border: none;
+    //                 letter-spacing: -1px;
+    //                 margin-top: 15px;
+    //                 border: none;
+    //                 border-radius: 3px;
+    //                 cursor: pointer;
+    //             }
+    //         }
+    //     }
+    // }
     h1 {
         font-size: 2em;
         font-weight: 700;

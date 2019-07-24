@@ -1,28 +1,63 @@
-<div class="home-page">
+<div class="home-page ">
   <div class="home-content">
-    
-    <section class="one">
-      <h1><span>Hiro</span> Nakae</h1><br>
-      <p>
-        <span></span>Full Stack Developer / Node / Angular <br>
-      </p><br>
+
+    <section class="home">
+      <div class="wrapper1 ">
+        <div class="content ">
+          <h1 class="animated  slideInDown one"><span>Hiro</span> Nakae</h1>
+          <p class="animated  flipInX one">
+            <span></span>Web Developer / Node / Angular <br>
+          </p><br><br>
+          <div class="animated  slideInLeft one">
+            <a class="action-btn" routerLink="/about">About me</a>
+          </div>
+          
+          
+        </div>
+        
+      </div>
       
     </section>
-    
-    <section class="two">
-      <div class="wrapper">
-        <div class="content">
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-          Hello, I'm Hiro,
-        </div>
-      </div>
-      <a class="action-btn" routerLink="/contact">Contact me</a>
 
+    <section class="contact">
+        
+      <h1 class="alert alert-success hide">Message Sent!</h1>
+      <div class="contact-content ">
+        
+          <div class="wrapper">
+            <div class="content group">
+                
+              <form action="/contact" method="POST">
+                <div class="fieldwrap group">
+                  <div class="formleft  animated  slideInRight one">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                    /><br />
+                  </div>
+      
+                  <div class="formright  animated  slideInLeft one">
+                    <input
+                      type="text"
+                      name="email"
+                      placeholder="Email"
+                    /><br />
+                  </div>
+                </div>
+                <div class="formmessage  animated  slideInRight one">
+                  <textarea
+                    name="message"
+                    class="formmessagestyle"
+                    placeholder="Message"
+                  ></textarea
+                  ><br />
+                </div>
+                <a type="submit" class="send  animated  slideInLeft one">SEND</a>
+              </form>
+            </div>
+          </div>
+        </div>
     </section>
 
   </div>
