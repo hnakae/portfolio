@@ -48,7 +48,8 @@
                 height: 100vh;
                 z-index: 7;
                 background: $ap-dark;
-                
+                // background: linear-gradient(#05DBF2, #05F2F2);
+                // opacity: .5;
                 clip-path: circle(4000px at 100% 0%);
                 transition: all 3s ease;
                 
@@ -77,6 +78,7 @@
                 a{
                     text-decoration: none;
                     color: $ap-pop;
+                    // color: #010101;
                     width: 100%;
                     text-align: center;
                     justify-content: center;

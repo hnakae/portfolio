@@ -19,6 +19,7 @@
                 // background: white;
             }
         }
+        
         .wrapper{
             // background-color: #273040;
             // background-color: $bg-color;
@@ -29,7 +30,7 @@
             border-radius: 2px;
             
             // box-shadow: 0px 0px 115px #000000a6;
-            box-shadow: 0px 0px 115px pink;
+            box-shadow: 0px 0px 115px white;
             // box-shadow: 0px 0px 115px $blue;
             padding: 6%;
             width: 100%;
@@ -44,11 +45,11 @@
                 margin-top: 0em; 
                 font-family: 'Nunito', sans-serif;
                 h6 {
-                    color: $cyano-white;
+                    color: #010101;
                 }
                 h3{
                     
-                    color: $cyano-white;
+                    color: #010101;
                     text-align: left;
                 }
                 p{
@@ -57,7 +58,7 @@
                 a {
                     display: inline-block;
                     text-decoration: none;
-                    color: white;
+                    color: #010101;
                     font-weight: 700;
                     padding: 0.5em 2em;
                     border: 2px solid $blue;
@@ -73,6 +74,15 @@
                     width: 80%;
                 }
             }
+        }
+        .featured {
+            // box-shadow: 0px 0px 115px orange;
+        }
+        .subfeature {
+            // box-shadow: 0px 0px 115px purple;
+        }
+        .subsubfeature {
+            // box-shadow: 0px 0px 115px blue;
         }
     }
     // img {

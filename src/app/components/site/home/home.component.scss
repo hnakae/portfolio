@@ -23,12 +23,12 @@ ul {
     background: $bg-color;
     
     // background: $ap-dark;
-    height: 100%;
+    height: 200%;
     .home-content {
 
         section {
             
-            // height: calc(100vh - 56px);
+            height: calc(100vh - 56px);
             // height: 100vh;
             // height: 100%;
             // padding-top: 20%;
@@ -41,10 +41,12 @@ ul {
             &.home {
                 // height: 62%;
                 // height: 38vh;
-                height: calc(50vh - 56px);
+                // height: calc(50vh - 56px);
                 // height: calc(50vh - 56px);
                 // background: $bg-color;
-                background-image: url(../../../../assets/images/flower.jpg);
+                // background: $ap-pop;
+                background: linear-gradient(#05DBF2, #05F2F2);
+                // background-image: url(../../../../assets/images/flower.jpg);
                 // background: linear-gradient(#05DBF2, #05F2F2);
                 .wrapper1 {
                     // background: linear-gradient(#05DBF2, #05F2F2);
@@ -61,7 +63,7 @@ ul {
                                 color: white;
                                 font-weight: 700;
                                 // background: $blue;
-                                border: 2px solid $ap-pop;
+                                border: 2px solid orange;
                                 padding: 0.5em 2em;
                                 border-radius: 2px;
                                 margin-top: 1em;
@@ -81,16 +83,9 @@ ul {
                         // border: 2px solid black;
                         padding: 6%;
                         // box-shadow: 0px 0px 115px #000000a6;
-                        h6 {
-                            color: $cyano-white;
-                        }
-                        h3{
+                        h1, h2, h3, h4, h5, h6, p{
                             
-                            color: $cyano-white;
-                            text-align: left;
-                        }
-                        p{
-                            text-align: left;
+                            color: #010101;
                         }
                         // a {
                         //     display: inline-block;
@@ -113,12 +108,106 @@ ul {
                     }
                 }
             }
-            
+            &.about {
+                background: $ap-pop;
+                background: linear-gradient(#05DBF2, #05F2F2);
+                .container {
+                    // height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 0;
+                    padding-top: 0;
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        left: 60%;
+                        top: 20%;
+                        li img {
+                            width: 45%;
+                            // margin: 70px 0;
+                            &.one {
+                                margin-right: 50px;
+                            }
+                        }
+                    }
+                    // .wrapper{
+                    //     // background-color: #273040;
+                    //     // background-color: rgb(255, 189, 67);
+                    //     // background-color:#001d33;
+                    //     background-color: #010101;
+                    //     // background-color: white;
+                    //     border-radius: 2px;
+                    //     box-shadow: 0px 0px 115px #000000a6;
+                    //     // box-shadow: 0px 0px 115px $blue;
+                    //     padding: 6.3%;
+                    //     // width: 100%;
+                    //     // margin: 5% auto 10%;
+                    //     margin: 0;
+                    //     // border: 2px solid $bg-color;
+                    //     // &:hover{
+                    //     //     border: 2px solid $ap-pop;
+                    //     // }
+                    //     .content{
+                    //         display: block;
+                    //         margin-top: 0em; 
+                    //         font-family: 'Nunito', sans-serif;
+                    //         text-align: left;
+                    //     }
+                    // }
+                    .hello {
+                        font-weight: 600;
+                        font-size: 80px;
+                        font-family: 'Nunito', sans-serif;
+                        transform: translateY(-50%);
+                    }
+                    h1 {
+                        // font-size: 2em;
+                        // font-weight: 700;
+                        color: rgb(78, 78, 78);
+                        font-family: 'Nunito', sans-serif;
+                        span {
+                            border-bottom: 2px solid $ap-pop;
+                            // border-radius: 10px; 
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                    p {
+                        font-weight: 300;
+                        line-height: 1.8em;
+                        color: #98a0ad;
+                        display: inline;
+                        font-family: 'Nunito', sans-serif;
+                    }
+                    // text-align: right;
+                    a {
+                        font-family: 'Nunito', sans-serif;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #010101;
+                        font-weight: 700;
+                        padding: 0.5em 2em;
+                        border: 2px solid orange;
+                        border-radius: 2px;
+                        margin: 1em 0;
+                        
+                        &:hover{
+                            cursor: pointer;
+                            background: $ap-pop;
+                        }
+                    }
+                }
+                // &.about {
+                //     background: $ap-pop;
+                //     background: linear-gradient(#05DBF2, #05F2F2);
+                // }
+            }
             &.contact {
                 position: relative;
                 h1 {
                     position: absolute;
-                    right: 60px;
+                    left: 50px;
                     color: black;
                     bottom: 40px;
                     z-index: 3;

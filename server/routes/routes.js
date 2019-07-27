@@ -2,10 +2,10 @@ var User = require('../models/project');
 
 module.exports = function(app) {
   //api-----------------------
-  // app.get('/api/todos', function(req, res) {
+  app.get('/about', function(req, res) {
 
 
-  // });
+  });
 
   // // create todo and send back all todos after creation
   // app.post('/api/todos', function(req, res) {

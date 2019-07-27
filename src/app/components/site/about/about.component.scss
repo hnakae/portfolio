@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 .about-page {
     background: #3F4448;
-    height: 100%;
+    height: 200%;
     text-align: center;
     overflow: hidden;
     .content {
@@ -104,10 +104,10 @@
                 background: $ap-pop;
                 background: linear-gradient(#05DBF2, #05F2F2);
             }
-            // &.two {
-            //     // background: rgb(255, 189, 67);
-            //     background-color:#010101;
-            // }
+            &.two {
+                // background: rgb(255, 189, 67);
+                background-color:#010101;
+            }
         }
     }
 }
