@@ -39,6 +39,7 @@ ul {
             // border: 2px solid $bg-color;
             // padding-bottom: 120px;
             &.home {
+                // padding-top: -200px;
                 // height: 62%;
                 // height: 38vh;
                 // height: calc(50vh - 56px);
@@ -57,6 +58,18 @@ ul {
                     margin-top: 0;
                     padding-top: 0;
                     position: relative;
+                    transform: translatey(-100px);
+                    h1 {
+                        font-weight: 600;
+                        font-size: 80px;
+                        font-family: 'Nunito', sans-serif;
+                        transform: translateY(-50%);
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 18px;
+                        font-family: 'Nunito', sans-serif;
+                    }
                     .action-btn{
                         display: inline-block;
                         text-decoration: none;
@@ -69,9 +82,9 @@ ul {
                         border-radius: 2px;
                         margin-top: 1em;
                         margin-right: 1em;
-                        transition: .6s ease-in-out;
+                        // transition: .6s ease-in-out;
                         &:hover {
-                            background: $ap-dark;
+                            background: orange;
                             // box-shadow: 0px 0px 90px #000000a6;
                         }
                     }
@@ -90,6 +103,7 @@ ul {
                     margin-top: 0;
                     padding-top: 0;
                     position: relative;
+                    transform: translatey(-0px);
                     ul {
                         position: absolute;
                         left: 60%;
@@ -140,7 +154,7 @@ ul {
                         
                         &:hover{
                             cursor: pointer;
-                            background: $ap-pop;
+                            // background: $ap-pop;
                         }
                     }
                 }
