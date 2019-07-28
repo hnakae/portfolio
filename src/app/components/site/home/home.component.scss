@@ -36,7 +36,7 @@ ul {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            border: 2px solid $bg-color;
+            // border: 2px solid $bg-color;
             // padding-bottom: 120px;
             &.home {
                 // height: 62%;
@@ -48,62 +48,31 @@ ul {
                 background: linear-gradient(#05DBF2, #05F2F2);
                 // background-image: url(../../../../assets/images/flower.jpg);
                 // background: linear-gradient(#05DBF2, #05F2F2);
-                .wrapper1 {
-                    // background: linear-gradient(#05DBF2, #05F2F2);
-                    // background: $bg;
-                    width: 100%;
-                    height: 100%;
-                    padding: 6%;
-                    .content{
-                        div {
-                            .action-btn{
-                                display: inline-block;
-                                text-decoration: none;
-                                font-family: 'Nunito', sans-serif;
-                                color: white;
-                                font-weight: 700;
-                                // background: $blue;
-                                border: 2px solid orange;
-                                padding: 0.5em 2em;
-                                border-radius: 2px;
-                                margin-top: 1em;
-                                margin-right: 1em;
-                                transition: .6s ease-in-out;
-                                &:hover {
-                                    background: $ap-dark;
-                                    // box-shadow: 0px 0px 90px #000000a6;
-                                }
-                            }
-                        }
-                        height: 100%;
-                        display: block;
-                        margin-top: 0em; 
+                .container {
+                    // height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 0;
+                    padding-top: 0;
+                    position: relative;
+                    .action-btn{
+                        display: inline-block;
+                        text-decoration: none;
                         font-family: 'Nunito', sans-serif;
-                        text-align: center;
-                        // border: 2px solid black;
-                        padding: 6%;
-                        // box-shadow: 0px 0px 115px #000000a6;
-                        h1, h2, h3, h4, h5, h6, p{
-                            
-                            color: #010101;
-                        }
-                        // a {
-                        //     display: inline-block;
-                        //     text-decoration: none;
-                        //     color: white;
-                        //     font-weight: 700;
-                        //     padding: 0.5em 2em;
-                        //     border: 2px solid $blue;
-                        //     border-radius: 2px;
-                        //     margin-top: 1em;
-                        //     margin-right: 1em;
-                        //     &:hover{
-                        //         cursor: pointer;
-                        //         background: $ap-dark;
-                        //     }
-                        // }
-                        img {
-                            width: 80%;
+                        color: white;
+                        font-weight: 700;
+                        // background: $blue;
+                        border: 2px solid orange;
+                        padding: 0.5em 2em;
+                        border-radius: 2px;
+                        margin-top: 1em;
+                        margin-right: 1em;
+                        transition: .6s ease-in-out;
+                        &:hover {
+                            background: $ap-dark;
+                            // box-shadow: 0px 0px 90px #000000a6;
                         }
                     }
                 }
@@ -111,6 +80,7 @@ ul {
             &.about {
                 background: $ap-pop;
                 background: linear-gradient(#05DBF2, #05F2F2);
+                text-align: center;
                 .container {
                     // height: 100%;
                     display: flex;
@@ -132,30 +102,6 @@ ul {
                             }
                         }
                     }
-                    // .wrapper{
-                    //     // background-color: #273040;
-                    //     // background-color: rgb(255, 189, 67);
-                    //     // background-color:#001d33;
-                    //     background-color: #010101;
-                    //     // background-color: white;
-                    //     border-radius: 2px;
-                    //     box-shadow: 0px 0px 115px #000000a6;
-                    //     // box-shadow: 0px 0px 115px $blue;
-                    //     padding: 6.3%;
-                    //     // width: 100%;
-                    //     // margin: 5% auto 10%;
-                    //     margin: 0;
-                    //     // border: 2px solid $bg-color;
-                    //     // &:hover{
-                    //     //     border: 2px solid $ap-pop;
-                    //     // }
-                    //     .content{
-                    //         display: block;
-                    //         margin-top: 0em; 
-                    //         font-family: 'Nunito', sans-serif;
-                    //         text-align: left;
-                    //     }
-                    // }
                     .hello {
                         font-weight: 600;
                         font-size: 80px;
@@ -198,10 +144,6 @@ ul {
                         }
                     }
                 }
-                // &.about {
-                //     background: $ap-pop;
-                //     background: linear-gradient(#05DBF2, #05F2F2);
-                // }
             }
             &.contact {
                 position: relative;

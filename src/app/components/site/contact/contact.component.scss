@@ -24,6 +24,8 @@
           width: 100%;
         //   padding-top: 75px;
           .content{
+            position: fixed;
+            bottom: 0;
               // background-color: #273040;
             //   background-color: $bg-color;
             background: linear-gradient(#05DBF2, #05F2F2);
@@ -100,7 +102,7 @@
                         }
                 }
                 }
-                a{
+                input{
                     color: #00e5ea;
                     font-family: 'Nunito', sans-serif;
                     text-align: center;
@@ -116,7 +118,7 @@
                     letter-spacing: -1px;
                     margin-top: 15px;
                     border: none;
-                    border-radius: 3px;
+                    border-radius: 4px;
                     cursor: pointer;
                 }
             }

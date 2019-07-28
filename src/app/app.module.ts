@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { HomeComponent } from './components/site/home/home.component';
 import { AboutComponent } from './components/site/about/about.component';
-import { SkillsComponent } from './components/site/skills/skills.component';
 import { WorkComponent } from './components/site/work/work.component';
 import { ContactComponent } from './components/site/contact/contact.component';
 import { ContentComponent } from './components/layout/content/content.component';
@@ -22,7 +21,6 @@ import { GmapComponent } from './components/api/gmap/gmap.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    SkillsComponent,
     WorkComponent,
     ContactComponent,
     ContentComponent,

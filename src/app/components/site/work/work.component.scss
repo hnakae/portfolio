@@ -41,16 +41,29 @@
             //     border: 2px solid $ap-pop;
             // }
             .content{
+                text-align: center;
                 display: block;
                 margin-top: 0em; 
                 font-family: 'Nunito', sans-serif;
+                height: 160px;
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+                    float: left;
+                    a {
+                        width: 49%;
+                        text-align: center;
+                    }
+                }
                 h6 {
                     color: #010101;
                 }
                 h3{
                     
                     color: #010101;
-                    text-align: left;
+                    text-align: center;
                 }
                 p{
                     text-align: left;
