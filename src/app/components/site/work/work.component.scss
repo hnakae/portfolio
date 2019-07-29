@@ -6,10 +6,16 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    padding-top: 30px;
+    // padding-top: 30px;
     .container{
         width: 100%;
-        padding-top: 5%;
+        // padding-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+        padding-right: 0;
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
         .heading {
             // height: 30vh;
             border-bottom: 1px solid black;
@@ -19,7 +25,6 @@
                 // background: white;
             }
         }
-        
         .wrapper{
             // background-color: #273040;
             // background-color: $bg-color;
@@ -34,7 +39,7 @@
             // box-shadow: 0px 0px 115px $blue;
             padding: 6%;
             width: 100%;
-            margin: 5% auto 10%;
+            // margin: 5% auto 10%;
 
             // border: 2px solid $bg-color;
             // &:hover{
@@ -45,18 +50,19 @@
                 display: block;
                 margin-top: 0em; 
                 font-family: 'Nunito', sans-serif;
-                height: 160px;
-                .buttons {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    width: 100%;
-                    float: left;
-                    a {
-                        width: 49%;
-                        text-align: center;
-                    }
-                }
+                // height: 160px;
+                height: auto;
+                // .buttons {
+                //     display: flex;
+                //     flex-direction: row;
+                //     justify-content: space-around;
+                //     width: 100%;
+                //     float: left;
+                //     a {
+                //         width: 49%;
+                //         text-align: center;
+                //     }
+                // }
                 h6 {
                     color: #010101;
                 }
@@ -88,15 +94,6 @@
                 }
             }
         }
-        .featured {
-            // box-shadow: 0px 0px 115px orange;
-        }
-        .subfeature {
-            // box-shadow: 0px 0px 115px purple;
-        }
-        .subsubfeature {
-            // box-shadow: 0px 0px 115px blue;
-        }
     }
     // img {
     //     max-width: 500px;
@@ -123,6 +120,11 @@
     .works-page {
         //background-image: url(../../../../assets/images/home.png);
         // position: relative;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
         h1 {
             font-size: 3em;
             span {

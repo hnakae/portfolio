@@ -2,8 +2,8 @@ var User = require('../models/project');
 
 module.exports = function(app) {
   //api-----------------------
-  app.get('/about', function(req, res) {
-
+  app.get('/', function(req, res) {
+    res.sendFile(__dirname + '')
 
   });
 
