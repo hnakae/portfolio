@@ -14,8 +14,12 @@
         grid-template-columns: repeat(1, 1fr);
         padding-left: 0;
         padding-right: 0;
-        grid-gap: 1em;
+        // grid-gap: 1em;
         grid-auto-rows: minmax(100px, auto);
+        position: relative;
+        .featured {
+            min-height: 38vh;
+        }
         .heading {
             // height: 30vh;
             border-bottom: 1px solid black;
@@ -51,18 +55,18 @@
                 margin-top: 0em; 
                 font-family: 'Nunito', sans-serif;
                 // height: 160px;
-                height: auto;
-                // .buttons {
-                //     display: flex;
-                //     flex-direction: row;
-                //     justify-content: space-around;
-                //     width: 100%;
-                //     float: left;
-                //     a {
-                //         width: 49%;
-                //         text-align: center;
-                //     }
-                // }
+                height: 100%;
+                .buttons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+                    float: left;
+                    a {
+                        width: 49%;
+                        text-align: center;
+                    }
+                }
                 h6 {
                     color: #010101;
                 }
@@ -75,7 +79,7 @@
                     text-align: left;
                 }
                 a {
-                    display: inline-block;
+                    display: block;
                     text-decoration: none;
                     color: #010101;
                     font-weight: 700;
@@ -93,6 +97,12 @@
                     width: 80%;
                 }
             }
+        }
+        .contact-item{ 
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 56px;
         }
     }
     // img {

@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 .about-page {
     background: #3F4448;
-    height: 200%;
+    // height: 200%;
+    height: 100%;
     text-align: center;
     overflow: hidden;
     .content {
         // padding-top: 123px;
         section {
             height: calc(100vh - 56px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             .content{
                 display: block;
                 margin-top: 0em; 
@@ -16,7 +21,7 @@
                 text-align: left;
             }
             .container {
-                height: 100%;
+                // height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -24,47 +29,12 @@
                 margin-top: 0;
                 padding-top: 0;
                 position: relative;
-                ul {
-                    position: absolute;
-                    left: 60%;
-                    top: 20%;
-                    li img {
-                        width: 45%;
-                        // margin: 70px 0;
-                        &.one {
-                            margin-right: 50px;
-                        }
-                    }
-                }
-                // .wrapper{
-                //     // background-color: #273040;
-                //     // background-color: rgb(255, 189, 67);
-                //     // background-color:#001d33;
-                //     background-color: #010101;
-                //     // background-color: white;
-                //     border-radius: 2px;
-                //     box-shadow: 0px 0px 115px #000000a6;
-                //     // box-shadow: 0px 0px 115px $blue;
-                //     padding: 6.3%;
-                //     // width: 100%;
-                //     // margin: 5% auto 10%;
-                //     margin: 0;
-                //     // border: 2px solid $bg-color;
-                //     // &:hover{
-                //     //     border: 2px solid $ap-pop;
-                //     // }
-                //     .content{
-                //         display: block;
-                //         margin-top: 0em; 
-                //         font-family: 'Nunito', sans-serif;
-                //         text-align: left;
-                //     }
-                // }
                 .hello {
                     font-weight: 600;
                     font-size: 80px;
                     font-family: 'Nunito', sans-serif;
                     transform: translateY(-50%);
+                    // text-align: left;
                 }
                 h1 {
                     // font-size: 2em;
@@ -81,12 +51,13 @@
                     font-weight: 300;
                     line-height: 1.8em;
                     color: #98a0ad;
-                    display: inline;
+                    display: block;
                     font-family: 'Nunito', sans-serif;
+                    text-align: center;
                 }
                 a {
                     font-family: 'Nunito', sans-serif;
-                    display: inline-block;
+                    display: block;
                     text-decoration: none;
                     color: white;
                     font-weight: 700;
@@ -94,20 +65,21 @@
                     border: 2px solid $ap-pop;
                     border-radius: 2px;
                     margin: 1em 0;
+                    text-align: center;
                     &:hover{
                         cursor: pointer;
                         background: $ap-pop;
                     }
                 }
             }
-            &.one {
+            &.about {
                 background: $ap-pop;
                 background: linear-gradient(#05DBF2, #05F2F2);
             }
-            &.two {
-                // background: rgb(255, 189, 67);
-                background-color:#010101;
-            }
+            // &.two {
+            //     // background: rgb(255, 189, 67);
+            //     background-color:#010101;
+            // }
         }
     }
 }

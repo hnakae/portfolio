@@ -2,36 +2,24 @@
 <!-- flex direction changes -->
 <div class="nav_bar" id="nav_bar"> 
   <header>
-    <!-- logo icon-->
     <a routerLink="/">
       <img (click)="myfunction()" class="logo" src="../../../../assets/images/custom-logo.png">
     </a>
-    <!-- <img (click)="myfunction()" [class]="hideMobile" src="../../../../assets/svgs/iconfinder_icon-close_211652.svg" alt="exit menu" id="exit" class="exit"> -->
 
-    <!-- desktop nav -->
-    <!--  -->
+
     <nav [class]="hideMobile">
-      <!-- hide-mobile show desktop-->
       <div class="nav_links">
         <a (click)="myfunction()" routerLink="/"><span>-</span> Home <span>-</span></a>
-        <!-- <a (click)="myfunction()" routerLink="/about"><span>-</span> About <span>-</span></a> -->
+        <a (click)="myfunction()" routerLink="/about"><span>-</span> About <span>-</span></a>
         <a (click)="myfunction()" routerLink="/work"><span>-</span> Work <span>-</span></a>
-        <!-- <a (click)="myfunction()" routerLink="/work"><span>-</span> Featured <span>-</span></a> -->
         <a (click)="myfunction()" routerLink="/contact"><span>-</span> Contact <span>-</span></a>
-
-        
-        <!-- <a class="resume-btn">
-          <div class="module-border" style="margin: 0 auto; margin-top: 10px;">
-            <div class="module">
-              Resume
-            </div>
-          </div>
-        </a> -->
       </div>
     </nav>
-    <!-- mobile menu: hide desktop -->
-    <img (click)="myfunction()" [ngClass]="status ? 'success' : 'danger'" class="menu" src="{{path}}" alt="toggle menu" id="menu">
-    
+
+
+
+    <img (click)="myfunction()"  class="menu" src="{{path}}" alt="toggle menu" id="menu">
+    <!-- [ngClass]="status ? 'success' : 'danger'" -->
   </header>
 </div>
 

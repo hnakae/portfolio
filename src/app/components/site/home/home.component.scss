@@ -23,7 +23,8 @@ ul {
     background: $bg-color;
     
     // background: $ap-dark;
-    height: 200%;
+    // height: 200%;
+    height: 100%;
     .home-content {
 
         section {
@@ -61,12 +62,12 @@ ul {
                     // transform: translatey(-100px);
                     h1 {
                         // font-weight: 600;
-                        // font-size: 80px;
+                        font-size: 80px;
                         // font-family: 'Nunito', sans-serif;
                         // transform: translateY(-50%);
                         text-align: center;
                         font-weight: 600;
-                        font-size: 40px;
+                        // font-size: 40px;
                         font-family: 'Nunito', sans-serif;
                         transform: translateY(-50%);
                         // span {
@@ -75,8 +76,8 @@ ul {
                         // }
                     }
                     p {
-                        font-weight: 400;
-                        font-size: 18px;
+                        // font-weight: 400;
+                        // font-size: 18px;
                         font-family: 'Nunito', sans-serif;
                     }
                     .action-btn{

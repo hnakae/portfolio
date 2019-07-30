@@ -11,9 +11,12 @@ export class NavbarComponent implements OnInit {
 
   status = false;
 
+  // hideMobile-on(){};
+  // hideMobile-scrolltop(){};
+  // toggle-hideMobile(){}
 
   myfunction() {
-    // hide || reveal
+    // toggle
     if (this.hideMobile === 'hide-mobile') {
       this.hideMobile = '';
     } else {
