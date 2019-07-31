@@ -3,22 +3,22 @@
 <div class="nav_bar" id="nav_bar"> 
   <header>
     <a routerLink="/">
-      <img (click)="myfunction()" class="logo" src="../../../../assets/images/custom-logo.png">
+      <img (click)="hideMobileOn()" class="logo" src="../../../../assets/images/custom-logo.png">
     </a>
 
 
     <nav [class]="hideMobile">
       <div class="nav_links">
-        <a (click)="myfunction()" routerLink="/"><span>-</span> Home <span>-</span></a>
-        <a (click)="myfunction()" routerLink="/about"><span>-</span> About <span>-</span></a>
-        <a (click)="myfunction()" routerLink="/work"><span>-</span> Work <span>-</span></a>
-        <a (click)="myfunction()" routerLink="/contact"><span>-</span> Contact <span>-</span></a>
+        <a (click)="hideMobileOn()" routerLink="/"><span>-</span> Home <span>-</span></a>
+        <a (click)="hideMobileOn()" routerLink="/about"><span>-</span> About <span>-</span></a>
+        <a (click)="hideMobileOn()" routerLink="/work"><span>-</span> Work <span>-</span></a>
+        <a (click)="hideMobileOn()" routerLink="/contact"><span>-</span> Contact <span>-</span></a>
       </div>
     </nav>
 
 
 
-    <img (click)="myfunction()"  class="menu" src="{{path}}" alt="toggle menu" id="menu">
+    <img (click)="toggleMenu()"  class="menu" src="{{path}}" alt="toggle menu" id="menu">
     <!-- [ngClass]="status ? 'success' : 'danger'" -->
   </header>
 </div>

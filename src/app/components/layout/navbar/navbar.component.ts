@@ -10,11 +10,13 @@ export class NavbarComponent implements OnInit {
   path = '../../../../assets/images/custom-menu-icon.png';
 
 
-  // hideMobile-on(){};
+  hideMobileOn() {
+    this.hideMobile = 'hide-mobile';
+    this.path = '../../../../assets/images/custom-menu-icon.png';
+  }
   // hideMobile-scrolltop(){};
-  // toggle-hideMobile(){}
 
-  myfunction() {
+  toggleMenu() {
     // toggle
     if (this.hideMobile === 'hide-mobile') {
       this.hideMobile = '';
