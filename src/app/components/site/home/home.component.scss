@@ -25,10 +25,9 @@ ul {
     // background: $ap-dark;
     // height: 200%;
     height: 100%;
-    .home-content {
+    .content {
 
         section {
-            
             height: calc(100vh - 56px);
             // height: 100vh;
             // height: 100%;
@@ -76,9 +75,12 @@ ul {
                         // }
                     }
                     p {
-                        // font-weight: 400;
-                        // font-size: 18px;
+                        font-weight: 400;
+                        line-height: 1.8em;
+                        color: #98a0ad;
+                        display: block;
                         font-family: 'Nunito', sans-serif;
+                        text-align: center;
                     }
                     .action-btn{
                         display: inline-block;
@@ -357,28 +359,60 @@ ul {
         
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
+
     .home-page {
         position: relative;
         height: 100%;
         width: 100%;
-        .home-content {
+        .content {
             position: absolute;
-            top: 22%;
             left: 180px;
-            text-align: left;
-            width: 70%;
+            section {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                // text-align: left;
+                &.home {
+                    .container {
+                        display: block;
+                        text-align: left;
+                    }
+                }
+                
+            }
+            // text-align: left;
+            // width: 70%;
             img {
                 width: 250px;
             }
             h1 {
                 font-size: 3em;
-                span {
-                    border-bottom: 2px solid $light-blue; 
-                }
+                // span {
+                //     border-bottom: 2px solid $light-blue; 
+                // }
             }
             p {
                 width: 60%;
+                height: 30px;
+            }
+            a{
+                display: inline-block;
+                text-decoration: none;
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                font-weight: 700;
+                // background: $blue;
+                border: 2px solid $ap-pop;
+                padding: 0.5em 2em;
+                border-radius: 4px;
+                margin-right: 1em;
+                // transition: .6s ease-in-out;
+                &:hover {
+                    background: $ap-pop;
+                    // box-shadow: 0px 0px 90px #000000a6;
+                }
             }
         }
     }

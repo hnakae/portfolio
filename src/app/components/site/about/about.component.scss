@@ -84,25 +84,60 @@
         }
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
     .about-page {
-        //background-image: url(../../../../assets/images/home.png);
         position: relative;
+        height: 100%;
+        width: 100%;
         .content {
             position: absolute;
-            top: 22%;
             left: 180px;
-            text-align: left;
-        }
-        h1 {
-            font-size: 3em;
-            span {
-                border-bottom: 2px solid $light-blue; 
+            section {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                // text-align: left;
+                &.about {
+                    .container {
+                        display: block;
+                        text-align: left;
+                        transform: translatey(10px);
+                        // h1 {
+                        //     font-size: 3em;
+                        //     span {
+                        //         border-bottom: 2px solid $light-blue; 
+                        //     }
+                        // }
+                        p {
+                            text-align: left;
+                            height: 30px;
+                        }
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            font-family: 'Nunito', sans-serif;
+                            color: white;
+                            font-weight: 700;
+                            // background: $blue;
+                            border: 2px solid $ap-pop;
+                            padding: 0.5em 2em;
+                            border-radius: 4px;
+                            // margin-top: 1em;
+                            margin-right: 1em;
+                            // transition: .6s ease-in-out;
+                            &:hover {
+                                background: $ap-pop;
+                                // box-shadow: 0px 0px 90px #000000a6;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
-        p {
-            width: 60%;
-        }
+        
+        
     }
 }          
 

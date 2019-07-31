@@ -1,56 +1,29 @@
 @import "../../../../assets/scss/colors";
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 .works-page {
-    // background: #3F4448;
-    // text-align: center;
     width: 100%;
     height: 100%;
     margin: 0;
-    // padding-top: 30px;
-    .container{
-        width: 100%;
-        // padding-top: 5%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-left: 0;
-        padding-right: 0;
-        // grid-gap: 1em;
-        grid-auto-rows: minmax(100px, auto);
-        position: relative;
-        .featured {
-            // min-height: 38vh;
-        }
-        .heading {
-            // height: 30vh;
-            border-bottom: 1px solid black;
-            h1, p{
-                // margin-top: 150px;
-                color: black;
-                // background: white;
-            }
-        }
+    // .container{
+    //     width: 100%;
+    //     margin: 0 auto;
+    //     // padding-top: 10%;
+    //     padding-bottom: 0;
+    //     // padding-top: 5%;
+    //     display: grid;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     padding-left: 0;
+    //     padding-right: 0;
+    //     // grid-gap: 3em;
+    //     grid-auto-rows: minmax(100px, auto);
+    //     position: relative;
+        
         .wrapper{
-            // background-color: #273040;
             background-color: $bg-color;
-            // background-color:#001d33;
-            // background: linear-gradient(to bottom,#05DBF2,$ap-pop);
-            // background: linear-gradient(to bottom,$bg-color,white);
-            // #001d33
-
-            // border-radius: 4px;
-            
             box-shadow: 0px 0px 115px #000000a6;
-            // box-shadow: 0px 0px 115px white;
-            // box-shadow: 0px 0px 115px $blue;
             padding: 6%;
             width: 100%;
-            // margin: 5% auto 10%;
-
-            // border: 2px solid $bg-color;
-            // &:hover{
-            //     border: 2px solid $ap-pop;
-            // }
-           
+            
             .content{
                 text-align: center;
                 display: block;
@@ -59,6 +32,8 @@
                 // height: 160px;
                 height: 100%;
                 color: white;
+                width: 80%;
+                margin: 0 auto;
                 // .buttons {
                 //     display: flex;
                 //     flex-direction: row;
@@ -101,14 +76,16 @@
                     width: 80%;
                 }
             }
+            .fifth {
+                position: absolute;
+                bottom: 0;
+            }
         }
-        .contact-item{ 
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            min-height: 56px;
-        }
-    }
+        // .contact-item{ 
+        //     position: absolute;
+        //     bottom: 0;
+        // }
+    // }
     // img {
     //     max-width: 500px;
     // }
@@ -130,15 +107,32 @@
     }
     
 }
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
     .works-page {
         //background-image: url(../../../../assets/images/home.png);
         // position: relative;
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+        
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        box-sizing: border-box;
+        // padding-top: 20%;
+        padding-left: 0;
+        .wrapper{
+            background-color: $bg-color;
+            box-shadow: 0px 0px 115px #000000a6;
+            
+            padding: 6%;
+            width: 100%;
+            // height: 100%;
+            position: relative;
+            &.fifth {
+                // position: absolute;
+                // bottom: 0;
+                // height: 210px;
+                // display: inline;
+            }
         }
+
         h1 {
             font-size: 3em;
             span {

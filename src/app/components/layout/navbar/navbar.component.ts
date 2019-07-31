@@ -9,7 +9,6 @@ export class NavbarComponent implements OnInit {
   public  hideMobile = 'hide-mobile';
   path = '../../../../assets/images/custom-menu-icon.png';
 
-  status = false;
 
   // hideMobile-on(){};
   // hideMobile-scrolltop(){};
@@ -30,7 +29,6 @@ export class NavbarComponent implements OnInit {
       this.path = '../../../../assets/images/custom-menu-icon.png';
     }
 
-    this.status = !this.status;
   }
 
   constructor() { }
