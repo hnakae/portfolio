@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   public  hideMobile = 'hide-mobile';
   path = '../../../../assets/images/custom-menu-icon.png';
+  
 
 
   hideMobileOn() {
     this.hideMobile = 'hide-mobile';
     this.path = '../../../../assets/images/custom-menu-icon.png';
   }
-  // hideMobile-scrolltop(){};
 
   toggleMenu() {
     // toggle
@@ -36,7 +36,15 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    const mq = window.matchMedia( '(min-width: 1025px)' );
+    if (mq.matches) {
+      this.hideMobile = '';
+      if (this.hideMobile === 'hide-mobile') {
+        this.hideMobile = '';
+      }
+    } else {
+      this.hideMobile = 'hide-mobile';
+    }
   }
 
 }

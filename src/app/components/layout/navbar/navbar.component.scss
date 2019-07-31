@@ -15,6 +15,7 @@
 #nav_bar {
     grid-area: nav;
     background: $nav-color;
+    // overflow: hidden;
     header {
         display: flex;
         justify-content: space-between;
@@ -50,8 +51,8 @@
                 background: $ap-dark;
                 // background: linear-gradient(#05DBF2, #05F2F2);
                 // opacity: .5;
-                clip-path: circle(4000px at 100% 0%);
-                transition: all 3s ease;
+                // clip-path: circle(4000px at 100% 0%);
+                // transition: all 3s ease;
                 
                 display: flex;
                 flex-direction: column;
@@ -91,9 +92,9 @@
                         text-decoration: underline;
                     }  
                     span {
-                        display: none;
+                        // display: none;
                         &:hover {
-                            display: block;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -149,19 +150,31 @@
 
 @media (min-width: 1025px) {
     #nav_bar {
+        height: 100vh;
         header {
             display: flex;
             flex-direction: column;
             height: 100vh;
             position: relative;
+            .menu {
+                display: none;
+            }
             nav {
+                // height: calc(100vh-240px);
                 position: absolute;
-                top: 10%;
+                top: 0;
+                left: 31px;
                 .nav_links{
+                    padding-top: 340px;
                     a {
                         padding-left: 0;
                         span {
                             display: none;
+                        }
+                        i{
+                            &:hover{
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
