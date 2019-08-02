@@ -43,6 +43,12 @@
                 color: white;
                 width: 80%;
                 margin: 0 auto;
+                h6::before{
+                    content: '- ';
+                }
+                h6::after{
+                    content: ' -';
+                }
                 .disabled{
                     text-decoration: line-through;
                     &:hover{

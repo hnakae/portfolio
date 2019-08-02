@@ -4,6 +4,12 @@
 .hide-mobile {
     display: none;
 }
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 
 // .hide-desktop {
 //     display: none;
@@ -40,6 +46,9 @@
         
         nav { //for mobile - nav content...
             // padding-top: 100px;
+            // .box{
+                
+            // }
             .nav_links {
                 // transition-delay: 
                 position: absolute;

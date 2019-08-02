@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import $ from 'jquery';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,24 +10,33 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   public  hideMobile = 'hide-mobile';
   path = '../../../../assets/images/custom-menu-icon.png';
-  
-
+  mode = 'desktop' || 'mobile';
 
   hideMobileOn() {
-    this.hideMobile = 'hide-mobile';
-    this.path = '../../../../assets/images/custom-menu-icon.png';
-  }
-
-  toggleMenu() {
-    // toggle
-    if (this.hideMobile === 'hide-mobile') {
+    const mq = window.matchMedia( '(min-width: 1025px)' );
+    if (mq.matches) {
       this.hideMobile = '';
     } else {
       this.hideMobile = 'hide-mobile';
     }
+    // this.hideMobile = 'hide-mobile';
+    this.path = '../../../../assets/images/custom-menu-icon.png';
+  }
 
-    // menu || close : img
-    if (this.path === '../../../../assets/images/custom-menu-icon.png') {
+  // showDesktop() {
+  //   this.hideMobile = '';
+  //   this.mode = 'desktop';
+  // }
+
+  toggleMenu() {
+    if (this.hideMobile === 'hide-mobile') {
+      this.hideMobile = '';
+      this.mode = 'mobile';
+    } else {
+      this.hideMobile = 'hide-mobile';
+      this.mode = 'desktop';
+    }
+    if (this.path === '../../../../assets/images/custom-menu-icon.png' && this.mode === 'mobile') {
       this.path = '../../../../assets/images/custom-close.png';
     } else {
       this.path = '../../../../assets/images/custom-menu-icon.png';
@@ -33,17 +44,25 @@ export class NavbarComponent implements OnInit {
 
   }
 
+  WidthChange(mq) {
+    if (mq.matches) {
+    // window width is at least 1025px
+      $('nav').toggleClass('show');
+    } else {
+    // window width is less than 1025px
+      // nav links invisible
+      $('nav').toggleClass('show');
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
-    const mq = window.matchMedia( '(min-width: 1025px)' );
-    if (mq.matches) {
-      this.hideMobile = '';
-      if (this.hideMobile === 'hide-mobile') {
-        this.hideMobile = '';
-      }
-    } else {
-      this.hideMobile = 'hide-mobile';
+    if (matchMedia) {
+      const mq = window.matchMedia('(min-width:1025px)');
+      // tslint:disable-next-line: deprecation
+      mq.addListener(this.WidthChange);
+      this.WidthChange(mq);
     }
   }
 
