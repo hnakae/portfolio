@@ -6,6 +6,10 @@ module.exports = function(app) {
     res.sendFile(__dirname + '')
 
   });
+  // app.get('/contact', function(req, res) {
+  //   res.sendFile(__dirname + '')
+
+  // });
 
   // // create todo and send back all todos after creation
   // app.post('/api/todos', function(req, res) {
