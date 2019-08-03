@@ -139,14 +139,16 @@
         //background-image: url(../../../../assets/images/home.png);
         // position: relative;
         
-        display: grid;
-        // grid-template-columns: repeat(5, 1fr);
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        // display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        // grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-rows: 1fr 1fr;
         box-sizing: border-box;
         // padding-top: 20%;
         // grid-gap: 1em;
         // padding: 1em;
+        position: relative;
+        
         .wrapper{
             background-color: $bg-color;
             box-shadow: 0px 0px 115px #000000a6;

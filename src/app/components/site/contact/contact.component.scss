@@ -28,6 +28,7 @@ span {
           // height: 100vh;
         //   padding-top: 75px;
           .content{
+
             position: fixed;
             bottom: 0;
               // background-color: #273040;
@@ -41,6 +42,7 @@ span {
             // height: 50vh;
             //   margin: 10% auto 10%;
             h1 {
+              padding-top: 20px;
               // color: $ap-pop;
             }
               form{
@@ -114,23 +116,27 @@ span {
                     font-family: 'Nunito', sans-serif;
                     text-align: center;
                     font-weight: normal;
-                    // text-decoration: underline;
                     width: 100px;
                     font-size: 20px;
-                    // display: block;
                     padding: 0;
-                    
                     background-color: $nav-color;
                     border: none;
                     letter-spacing: -1px;
                     margin-top: 15px;
                     border: none;
                     border-radius: 4px;
-                    cursor: pointer;
                 }
             }
         }
     }
+    position: relative;
+    // .map {
+    //   position: relative;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    // }
     h1 {
         font-size: 2em;
         font-weight: 700;
@@ -179,9 +185,7 @@ span {
                 height: calc(100vh - 56px);
               // height: 50vh;
               //   margin: 10% auto 10%;
-              h1 {
-                // color: $ap-pop;
-              }
+              
                 form{
                   display: block;
                   margin-top: 0em;

@@ -95,6 +95,9 @@
                     font-weight: 400;
                     // margin-top: 100px;        
                     padding: 20px; 
+                    i {
+                        display: none;
+                    }
                     // text-shadow: 1 1px white;   
                     &:hover {
                         // transform: translate(-5px);
@@ -107,39 +110,13 @@
                         }
                     }
                 }
-                // gradient border
-                // .module-border{
-                //     max-width: 250px;
-                //     padding: 1rem;
-                //     position: relative;
-                //     background: linear-gradient(to right, $blue, $pink);
-                //     padding: 3px;
-                //     .module{
-                //         background: $ap-dark;
-                //         color: white;
-                //         padding: 2rem;
-                //         &:hover {
-                //             background: $purple;
-                //         }
-                //     }
-                // }//gradient border
-                // .resume-btn{
-                //     display: inline-block;
-                //     text-decoration: none;
-                //     font-family: 'Nunito', sans-serif;
-                //     color: white;
-                //     font-weight: 700;
-                //     // background: $blue;
-                //     border: 2px solid $blue;
-                //     // width: 152px;
-                //     border-radius: 2px;
-                //     // width: 100px;
-                //     // transition: 0.3s;
-                //     &:hover {
-                //         background: $blue;
-                //         // box-shadow: 0px 0px 90px #000000a6;
-                //     }
-                // }
+            }
+        }
+        ul {
+            li {
+                i {
+                    display: none;
+                }
             }
         }
         .menu {
@@ -178,16 +155,30 @@
                 // }
                 .nav_links{
                     padding-top: 340px;
+                    display: flex;
+                    flex-direction: column;
                     a {
+                        padding-top: 30px;
                         padding-left: 0;
                         span {
                             display: none;
                         }
                         i{
+                            display: block;
+                            color: $ap-pop;
                             &:hover{
                                 text-decoration: underline;
                             }
                         }
+                    }
+                }
+            }
+            ul {
+                li {
+                    padding: 10px;
+                    i {
+                        display: block;
+                        color: $ap-pop;
                     }
                 }
             }
