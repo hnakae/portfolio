@@ -5,6 +5,8 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+// CORS
+const cors = require('cors');
 // const Schema = mongoose.Schema;
 
 const database = require('./config/database');
@@ -18,6 +20,8 @@ mongoose.connect(database.url, {useNewUrlParser: true});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'dist/portfolio')));
+
+app.use(cors());
 // app.use('/api', api);
 
 //=============================================
@@ -46,30 +50,7 @@ let transporter = nodemailer.createTransport({
 //     }
 // });
 
-// app.post('/contact', function(req, res) {
-//     const {name, email, message} = req.body;
-//     console.log(name);
-//     if (!(data.name === 'undefined' || data.email === 'undefined' || data.message === 'undefined')) {
-//         const mailOptions = {
-//             to: 'nakae27@gmail.com', // receiver address
-//             subject: 'Portfolio Visitor', // subject line
-//             text: '[' + data.email + '] : ' +data.message // plain text body
-//         };
 
-//         // Return 'success' or 'error' message following email attempt
-//         transporter.sendMail(mailOptions, function (error) {
-//             if (error) {
-//                 res.send('Hmm, something went wrong..');
-//                 return console.log(error);
-//             } else {
-//                 res.send('Email sent.');
-//             }
-//         });
-//     } else {
-//         res.send('Stop that');
-//     }
-    
-// });
 
 
 

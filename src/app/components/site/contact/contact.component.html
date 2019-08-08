@@ -4,7 +4,9 @@
     <div class="wrapper">
       <div class="content group animated  slideInUp one">
         <h1>From:</h1>
-        <form action="/contact" method="POST">
+
+        <form action="/contact" method="POST" #userForm="ngForm">
+          {{ userForm.value | json }}
           <div class="fieldwrap group">
             <div class="formleft">
               <input
@@ -12,6 +14,7 @@
                 name="name"
                 id="name"
                 placeholder="Name"
+                ngModel
               /><br />
             </div>
 
@@ -21,6 +24,7 @@
                 name="email"
                 id="email"
                 placeholder="Email"
+                ngModel
               /><br />
             </div>
           </div>
@@ -30,11 +34,13 @@
               id="message"
               class="formmessagestyle"
               placeholder="Message"
+              ngModel
             ></textarea
             ><br />
           </div>
-          <input type="submit" class="send" value="SEND">
+          <input type="submit" class="send" value="SEND" ngModel>
         </form>
+
         <!-- <p style="color: white;">twitter linkedin github icons</p><br>
         <a (click)="myfunction()" routerLink="/"><span>-</span> Home <span>-</span></a>
         <a (click)="myfunction()" routerLink="/about"><span>-</span> About <span>-</span></a>

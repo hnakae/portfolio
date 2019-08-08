@@ -14,6 +14,8 @@ import { WorkComponent } from './components/site/work/work.component';
 import { ContactComponent } from './components/site/contact/contact.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { GmapComponent } from './components/api/gmap/gmap.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { GmapComponent } from './components/api/gmap/gmap.component';
       apiKey: 'AIzaSyBEkdHuhopLCGmsNAOUJiusigM5AOJOMUk'
     })
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
