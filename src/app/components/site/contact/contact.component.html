@@ -3,10 +3,14 @@
   <div class="contact-content">
     <div class="wrapper">
       <div class="content group animated  slideInUp one">
-        <h1>From:</h1>
+        <h1 *ngIf="!submitted">From:</h1>
+        <div *ngIf="submitted" class="wrapper">
+          <div class="content">
+            <h1>Message Sent!</h1>
+          </div>
+        </div>
+        <form *ngIf="!submitted" #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
 
-        <form action="/contact" method="POST" #userForm="ngForm">
-          {{ userForm.value | json }}
           <div class="fieldwrap group">
             <div class="formleft">
               <input
@@ -14,17 +18,23 @@
                 name="name"
                 id="name"
                 placeholder="Name"
-                ngModel
+                [(ngModel)]="emailModel.name"
+                required
+                #name="ngModel"
               /><br />
             </div>
+
+            <!-- {{ name.untouched }} -->
 
             <div class="formright">
               <input
                 type="text"
                 name="email"
                 id="email"
+                required
                 placeholder="Email"
-                ngModel
+                [(ngModel)]="emailModel.email"
+                [ngModelOptions]="{standalone: true}"
               /><br />
             </div>
           </div>
@@ -32,13 +42,14 @@
             <textarea
               name="message"
               id="message"
+              required
               class="formmessagestyle"
               placeholder="Message"
-              ngModel
+              [(ngModel)]="emailModel.message"
             ></textarea
             ><br />
           </div>
-          <input type="submit" class="send" value="SEND" ngModel>
+          <input type="submit" class="send" value="SEND">
         </form>
 
         <!-- <p style="color: white;">twitter linkedin github icons</p><br>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import $ from 'jquery';
+import { Email } from '../../../../../server/models/email';
+import { ContactService } from '../../../contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,29 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  emailModel = new Email('', '', '');
 
+  submitted = false;
 
-  constructor() { }
+  // tslint:disable-next-line: variable-name
+  constructor(private _contactService: ContactService) { }
 
-  ngOnInit() {
-    // $('form').on('submit', (e) => {
-    //   e.preventDefault();
-
-    //   const name = $('#name').val().trim();
-    //   const email = $('#email').val().trim();
-    //   const message = $('#message').val().trim();
-
-    //   const data = {
-    //     name,
-    //     email,
-    //     message
-    //   };
-
-    //   // tslint:disable-next-line: only-arrow-functions
-    //   $.post('/contact', data, function() {
-    //     console.log('server recieved data');
-    //   });
-    // });
+  onSubmit() {
+    this.submitted = true;
+    this._contactService.contact(this.emailModel)
+    .subscribe(
+      data => console.log('Success!', data),
+      error => console.error('Error!', error)
+    );
   }
+
+  ngOnInit() { }
 
 }
