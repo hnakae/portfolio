@@ -36,9 +36,9 @@
             max-height: 40px;
             border-radius: 50%;
             background: none;
-            &:hover {
-                transform: scale(1.2);
-            }
+            // &:hover {
+            //     transform: scale(1.2);
+            // }
         }
         img .exit {
             max-height: 40px;
@@ -73,9 +73,9 @@
                     top: 0;
                     margin: 20px;
                     cursor: pointer;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                    // &:hover {
+                    //     transform: scale(1.1);
+                    // }
                     &.exit {
                         right: 0;
                         
@@ -124,9 +124,9 @@
             max-height: 23px;
             padding-right: 6px;
             cursor: pointer;
-            &:hover {
-                transform: scale(1.2);
-            }
+            // &:hover {
+            //     transform: scale(1.2);
+            // }
         }
         p {
             color: white;
@@ -150,6 +150,7 @@
                 position: absolute;
                 top: 0;
                 left: 31px;
+                display: block;
                 // &.box {
                 //     display: block;
                 // }

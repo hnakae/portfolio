@@ -32,12 +32,13 @@ ul {
             // height: 100vh;
             // height: 100%;
             // padding-top: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // flex-direction: column;
             // border: 2px solid $bg-color;
             // padding-bottom: 120px;
+
             &.home {
                 // padding-top: -200px;
                 // height: 62%;
@@ -69,6 +70,8 @@ ul {
                         // font-size: 40px;
                         font-family: 'Nunito', sans-serif;
                         transform: translateY(-50%);
+                        margin: 0;
+                        margin-top: 55px;
                         // span {
                         //     border-bottom: 2px solid $ap-pop;
                         //     border-bottom-right-radius: 4px;
