@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
 import $ from 'jquery';
+
 
 @Component({
   selector: 'app-navbar',
@@ -45,17 +45,35 @@ export class NavbarComponent implements OnInit {
   }
 
   WidthChange(mq) {
-    if (mq.matches) {
-    // window width is at least 1025px
-      $('nav').toggleClass('show');
+    if (mq.matches) {// window width is at least 1025px
+
+    
+      // $('nav').addClass('show');
+      $('nav').addClass('show');
+      // $('nav').removeClass('hide');
+      // $('ul').addClass('show');
       $('ul').addClass('show');
+      // $('ul').removeClass('hide');
+      // $('i').addClass('show');
       $('i').addClass('show');
-    } else {
-    // window width is less than 1025px
+      // $('i').removeClass('hide');
+      // if (this.hideMobile === '') {
+      //   this.toggleMenu();
+      // }
+      
+    } else {// window width is less than 1025px
+      
       // nav links invisible
-      $('nav').toggleClass('show');
+      $('nav').removeClass('show');
+      $('nav').addClass('hide');
+      // $('nav').addClass('hide');
+      // // $('nav').toggleClass('show');
+      // $('ul').removeClass('show');
       $('ul').addClass('hide');
+      // $('ul').addClass('hide');
+      // $('i').removeClass('show');
       $('i').addClass('hide');
+      // $('i').addClass('hide');
       // if (this.hideMobile === '') {
       //   this.toggleMenu();
       // }
