@@ -362,7 +362,10 @@ ul {
         
     }
 }
-@media (min-width: 1025px) {
+@media (min-width: 600px) { // tablets
+
+}
+@media (min-width: 1025px) { // desktop
 
     .home-page {
         position: relative;
