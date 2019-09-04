@@ -18,7 +18,12 @@ export class ContactComponent implements OnInit {
   constructor(private _contactService: ContactService) { }
 
   onSubmit() {
-    this.submitted = true;
+    if (this.emailModel.name && this.emailModel.email && this.emailModel.message) {
+      this.submitted = true;
+      this.emailModel.name = '';
+      this.emailModel.email = '';
+      this.emailModel.message = '';
+    }
     this._contactService.contact(this.emailModel)
     .subscribe(
       data => console.log('Success!', data),

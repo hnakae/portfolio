@@ -4,24 +4,21 @@
     <div class="wrapper">
       <div class="content group animated  slideInUp one">
         <h1 *ngIf="!submitted">From:</h1>
-        <div *ngIf="submitted" class="wrapper">
-          <div class="content">
-            <h1>Message Sent!</h1>
-          </div>
-        </div>
-        <form *ngIf="!submitted" #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+        <h1 *ngIf="submitted">Message Sent!</h1>
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()" >
 
           <div class="fieldwrap group">
             <div class="formleft">
               <input
                 type="text"
-                name="name"
                 id="name"
                 placeholder="Name"
-                [(ngModel)]="emailModel.name"
                 required
+                name="name"
+                [(ngModel)]="emailModel.name"
                 #name="ngModel"
               /><br />
+              <div class="alert alert-danger" style="text-align: left;" *ngIf="!name.valid && name.touched">required</div>
             </div>
 
             <!-- {{ name.untouched }} -->
@@ -34,8 +31,10 @@
                 required
                 placeholder="Email"
                 [(ngModel)]="emailModel.email"
+                #email="ngModel"
                 [ngModelOptions]="{standalone: true}"
               /><br />
+              <div class="alert alert-danger" style="text-align: left;" *ngIf="!email.valid && email.touched">required</div>
             </div>
           </div>
           <div class="formmessage">
@@ -46,8 +45,9 @@
               class="formmessagestyle"
               placeholder="Message"
               [(ngModel)]="emailModel.message"
-            ></textarea
-            ><br />
+              #message="ngModel"
+            ></textarea><br />
+            <div class="alert alert-danger" style="text-align: left;" *ngIf="!message.valid && message.touched">required</div>
           </div>
           <input type="submit" class="send" value="SEND">
         </form>
